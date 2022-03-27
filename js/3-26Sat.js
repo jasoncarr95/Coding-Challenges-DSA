@@ -33,7 +33,7 @@
       console.log(sortByLength( ["Telescopes", "Glasses", "Eyes", "Monocles"] ));
 
   //maximum multiple
-    for loop between 1 and <=bound... check if divisible by divisor... add all those to an array, return the largest number in the array.. ez pz (last element/index of length-1)
+    // for loop between 1 and <=bound... check if divisible by divisor... add all those to an array, return the largest number in the array.. ez pz (last element/index of length-1)
         function maxMultiple(divisor, bound){        
           let arr = [];
           for(let n =1; n <= bound; n++){
@@ -44,7 +44,7 @@
           return arr[arr.length-1]
         }
         
-          way easier!!
+          //way easier!!
             function maxMultiple(divisor, bound){
               return bound-bound%divisor
             } 
