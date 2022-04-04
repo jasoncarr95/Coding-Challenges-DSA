@@ -9,3 +9,9 @@ function sumOfMinimums(arr) {
 function smallEnough(a, limit){
     return a.every((value)=> value<= limit)
   }
+
+  //array filter - even numbers
+  function getEvenNumbers(numbersArray){
+    let evens= numbersArray.filter(number => number%2===0)
+    return evens
+  }
