@@ -39,3 +39,4 @@ function find_average(array) {
     
     return  sum / array.length || 0
   }
+  
