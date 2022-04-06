@@ -10,11 +10,11 @@
 // }
 // console.log(solution (10) );
 
-function reverseWords(str){
-    return str.split(' ').reverse().join(' ')
-  }
+// function reverseWords(str){
+//     return str.split(' ').reverse().join(' ')
+//   }
 
-  console.log((reverseWords("hello world!"))) //"world! hello"))
-  console.log((reverseWords("yoda doesn't speak like this"))) //"this like speak doesn't yoda"
-  console.log((reverseWords("row row row your boat"     ))) //"boat your row row row"
+//   console.log((reverseWords("hello world!"))) //"world! hello"))
+//   console.log((reverseWords("yoda doesn't speak like this"))) //"this like speak doesn't yoda"
+//   console.log((reverseWords("row row row your boat"     ))) //"boat your row row row"
         
