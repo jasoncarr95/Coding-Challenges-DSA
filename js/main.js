@@ -1,3 +1,6 @@
+document.querySelector('#date').innerHTML=Date()
+
+
 // const humanYearsCatYearsDogYears = function(humanYears) {
 //     let catYears = 0;
 //     let dogYears = 0;
