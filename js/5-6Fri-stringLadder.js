@@ -74,3 +74,4 @@ function isPalindrome(line) {
 console.log(isPalindrome('walter'));
 console.log(isPalindrome('anna'));
 console.log(isPalindrome('12321'));
+
