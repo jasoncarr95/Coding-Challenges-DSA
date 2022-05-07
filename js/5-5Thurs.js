@@ -28,4 +28,4 @@ function pattern(n){
 
     return n < 1 ? '' : n==1? '1' : result;
 }
-console.log(pattern(5));    //  "1\n22\n333\n4444\n55555"
+// console.log(pattern(5));    //  "1\n22\n333\n4444\n55555"
