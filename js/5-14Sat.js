@@ -32,7 +32,7 @@ function getSumOfDigits(integer) {
 
 function largest(n,xs){
     xs.sort((a,b) => a-b);
-    return xs.slice(-`${n}`)
+    return n > 0 ? xs.slice(-`${n}`) : 0
 }
 console.log(largest(3,[5,1,5,2,3,1,2,3,5]));
 
