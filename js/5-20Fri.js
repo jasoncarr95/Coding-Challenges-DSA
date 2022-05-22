@@ -12,15 +12,15 @@
             // if 1 digit, check for even (%2)
         // if multiple digits, add digits, check again, repeat
 
+        //  I QUIT .. :(
 function isVeryEvenNumber(n) {
-    if(n<10) return n%2==0;
-    else{
-        n.toString()
-        while(n.length > 1){
-            n = n.split('').reduce((a,b) => a+b,0)
-        }
-        return Number(n) % 2 ==0
-    }
+  n = n.toString();
+  
+  while(n.length > 1){
+   n = n.split('').reduce((a,b) => Number(a) + Number(b), 0).toString();
+  }
+  
+  return Number(n) % 2 === 0;
 }
 
 
