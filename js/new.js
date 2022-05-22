@@ -1,4 +1,16 @@
-//          ** 4/3/2022**
+// function multiTable(number) {
+    
+//     for(i=1; i<=10; i++){
+//     console.log(`${i} * ${number} = ${i*number}`);
+//     }
+//   }
+//   multiTable(5)
+
+// let disArrayExampleWithARandomLongName = ['word','idk','filler','sup']
+// console.log(disArrayExampleWithARandomLongName[2]); 
+
+
+// ** 4/3/2022**
 
 // function solution(number){
 //     let arr = [];
