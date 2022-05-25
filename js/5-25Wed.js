@@ -55,7 +55,7 @@ function pillars(num_pill, dist, width) {
 //  Parmeters:  n ... a positive integer
 //  Return: the nearest square number
 //  Example:
-    console.log(nearestSq(111));    121
+    // console.log(nearestSq(111));    121
     
 //  PseudoCode:
 
