@@ -51,3 +51,5 @@ function removeUrlAnchor(url){
 }
 // console.log(removeUrlAnchor("www.codewars.com#about"))
 // console.log(removeUrlAnchor("www.codewars.com/about"))
+console.log(removeUrlAnchor("www.codewars.com#about"))
+console.log(removeUrlAnchor("www.codewars.com/about"))
