@@ -12,3 +12,23 @@
 // function sumFromString(str){
 //   // ...
 // }
+
+
+
+//  Measuring Average Speed   KYU 7
+//  Parmeters:  given 2 strings (distance in meters or km),     time(seconds or minuts)
+//  Return: return string   mph rounded to nearest integer
+        //  one metre per second is defined as 2.23694 miles per hour.
+//  Example:
+console.log(calculateSpeed('3km','5min'))   //  '22mph
+console.log(calculateSpeed('100m','10s'))   //  '22mph
+
+//  PseudoCode:
+/*  Find meters per second 
+1.check if distance is km, if so multiply by 1000
+2. check if time is m , if so multiply by 60
+*/
+
+function calculateSpeed(distance, time) {
+// ...
+}
