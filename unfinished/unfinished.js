@@ -32,3 +32,18 @@ console.log(calculateSpeed('100m','10s'))   //  '22mph
 function calculateSpeed(distance, time) {
 // ...
 }
+
+
+
+//      =================
+
+//  Ones and Zeros  KYU 7
+    //  given array of ones and zeros, convert the equivalent binary value to an integer
+    //example:
+    console.log(binaryArrayToNumber([0,0,0,1])) // 1
+    console.log(binaryArrayToNumber([0,0,1,0])) // 2
+
+    
+const binaryArrayToNumber = arr => {
+// your code
+};
