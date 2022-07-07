@@ -46,10 +46,12 @@ const tail = (arr) => arr.slice(1); //  console.log(tail([1,2,3,4,5])); //  [2,3
 const init = (arr) => arr.slice(0, arr.length - 1); //  console.log(init([1,2,3,4,5])); //  [1,2,3,4]
 const last = (arr) => arr.slice(-1)[0]; //  console.log(last([1,2,3,4,5])); //  5
 
+//  REDUCE MY FRACTION  KYU 7
+
 function reduce(fraction) {
   let numerator = fraction[0];
   let denominator = fraction[1];
-  if (numerator === 1 || denominator === 1) return [numerator,denominator];
+  if (numerator === 1 || denominator === 1) return [numerator, denominator];
   const getGCD = (numerator, denominator) =>
     denominator ? getGCD(denominator, numerator % denominator) : numerator;
   const gcd = getGCD(numerator, denominator);
