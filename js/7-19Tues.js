@@ -18,10 +18,10 @@ class Kata {
 //    return largest number obtained after inserting +,*,()
 //   try every combo of a,b,c with that shit and then return the maximum obtained
 
-console.log(expressionMatter(2, 1, 2)); // 6
-console.log(expressionMatter(1, 2, 3)); //  9   --> (1+2) * 3
-console.log(expressionMatter(2, 10, 3)); //  60  --> (2*3) * 10
-console.log(expressionMatter(10, 5, 6)); //  300
+    // console.log(expressionMatter(2, 1, 2)); // 6
+    // console.log(expressionMatter(1, 2, 3)); //  9   --> (1+2) * 3
+    // console.log(expressionMatter(2, 10, 3)); //  60  --> (2*3) * 10
+    // console.log(expressionMatter(10, 5, 6)); //  300
 
 function expressionMatter(a, b, c) {
   return Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c));
