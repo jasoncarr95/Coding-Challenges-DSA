@@ -1,4 +1,3 @@
 .DS_Store
-unfinished/1unfinished.js
-unfinished/sortTheOdd-6.js
-unfinished/unfinished.js
+node_modules/
+unfinished/
