@@ -1,0 +1,23 @@
+{
+  "name": "javascript-dsa-notes",
+  "version": "1.0.0",
+  "description": "This repo contains my notes while prepping for the job hunt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasoncarr95/JavaScript-DSA-Notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasoncarr95/JavaScript-DSA-Notes/issues"
+  },
+  "homepage": "https://github.com/jasoncarr95/JavaScript-DSA-Notes#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  }
+}
