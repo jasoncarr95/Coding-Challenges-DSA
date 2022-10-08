@@ -121,91 +121,98 @@ let str2 = "Dominos";
 console.log(exampleString.indexOf(str2)); // 16
 ```
 
-## `match`
-
-The `match()` method retrieves the result of matching a string against a regular expression.
-
-### Syntax
-
-```javascript
-match(regexp);
-```
-
-### Examples
-
-```javascript
-// CHANGE
-```
-
 ## `repeat`
 
+The `repeat()` method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+
 ### Syntax
 
 ```javascript
-// CHANGE
+repeat(count);
 ```
 
 ### Examples
 
 ```javascript
-// CHANGE
-```
+let exampleString = "21";
+console.log(exampleString.repeat(5)); // 2121212121
 
-## `replace`
+// Converts argument to an integer (chops off decimal.. i.e 2.9 ->)
+exampleString = "Can you hear me?? ";
+console.log(exampleString.repeat(2.9)); // Can you hear me?? Can you hear me??
+// The same is true if you do maths (21/9 -> 2.333 -> 2)
+console.log(exampleString.repeat(21 / 9));
 
-### Syntax
-
-```javascript
-// CHANGE
-```
-
-### Examples
-
-```javascript
-// CHANGE
-```
-
-## `search`
-
-### Syntax
-
-```javascript
-// CHANGE
-```
-
-### Examples
-
-```javascript
-// CHANGE
+// If no argument, returns empty string
+exampleString = "Hey does this thing work?";
+console.log(exampleString.repeat()); // "" (empty string)
 ```
 
 ## `slice`
 
+The `slice` method returns a portion of a string as a new string (the original string is not mutated).
+
+It takes the parameters `indexStart` -The index of the first character to include in the returned substring.
+And (optionally) `indexEnd` -The index of the first character to exclude from the returned substring.
+
 ### Syntax
 
 ```javascript
-// CHANGE
+slice(indexStart);
+slice(indexStart, indexEnd);
 ```
 
 ### Examples
 
 ```javascript
-// CHANGE
+// Returns copy of entire string if no arguments passed
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.slice()); // "Hey does this thing work?"
+
+// Returns first 10 characters (chars at indices 0-9)
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.slice(0, 10)); // "Hey does t"
+
+// Returns all of string at and after index = 10
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.slice(10)); // "his thing work?"
+
+// Negative indexStart makes it start from the end.. i.e to get the last 4 characters
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.slice(-4)); // "ork?"
 ```
 
 ## `split`
 
+The `split()` method takes a pattern and divides a String into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
+
 ### Syntax
 
 ```javascript
-// CHANGE
+split();
+split(separator);
+split(separator, limit);
 ```
 
 ### Examples
 
 ```javascript
-// CHANGE
+// Split string into array of words (by space)
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.split(" ")); //[ 'Hey', 'does', 'this', 'thing', 'work?' ]
+
+// Split string into individual chars
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.split("")); // let x = ['H', 'e', 'y', ' ', 'd', 'o','e', 's', ' ', 't', 'h', 'i','s', ' ', 't', 'h', 'i', 'n','g', ' ', 'w', 'o', 'r', 'k','?']
+
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.split("this")); // [ 'Hey does ', ' thing work?' ]
+
+let exampleString = "Hey does this thing work?";
+console.log(exampleString.split(""));
 ```
+
+## `trim`
 
 ## `substr`
 
@@ -247,4 +254,51 @@ match(regexp);
 // CHANGE
 ```
 
-## `trim`
+## `replace`
+
+The `replace()` method returns a new string with one, some, or all matches of a `pattern` replaced by a `replacement`. The `pattern` can be a string or a **RegExp**, and the `replacement` can be a string or a function called for each match. If `pattern` is a string, only the first occurrence will be replaced. The original string is left unchanged.
+
+### Syntax
+
+```javascript
+replace(pattern, replacement);
+```
+
+### Examples
+
+```javascript
+let exampleString = "I love Papa Johns";
+console.log(exampleString.replace("Papa Johns", "Dominos")); // I love Dominos
+```
+
+## `match`
+
+The `match()` method retrieves the result of matching a string against a regular expression.
+
+### Syntax
+
+```javascript
+match(regexp);
+```
+
+### Examples
+
+```javascript
+// CHANGE
+```
+
+## `search`
+
+The search() method executes a search for a match between a regular expression and this String object.
+
+### Syntax
+
+```javascript
+search(regexp);
+```
+
+### Examples
+
+```javascript
+// CHANGE
+```
