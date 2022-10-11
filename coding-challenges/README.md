@@ -2,8 +2,8 @@
 
 ## Try the challenges
 
-- [Week 1 String Challenges](https://blog.barbaralaw.me/huntober-2022-day-1)
-- [Week 1 Array Challenges](https://blog.barbaralaw.me/huntober-2022-day-8)
+- [Week 1: String Challenges](https://blog.barbaralaw.me/huntober-2022-day-1)
+- [Week 2: Array Challenges](https://blog.barbaralaw.me/huntober-2022-day-8)
 
 ## Huntober on Twitter
 
