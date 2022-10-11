@@ -29,3 +29,9 @@ Ideally this repo would be much better organized.
 Initially I would create a single new js file each day and add all the challenges I completed on a given day to said file. Somewhat recently I  started creating a new directory for each day, with separate files for each individual challenge - Even more recently I started grouping by type of challenges solved (array/string/etc.)
 
 In an ideal world I'd spend the time to go back and reorganize the past problems better, splitting each challenge into its own file. It would also be nice to be able to group/sort by KYU level.
+
+## Other Code Challenges
+
+[Repo](https://github.com/jasoncarr95/Huntober-100Devs/tree/main/coding-challenges) containing challenges from Huntober.
+
+[LeetCode](https://leetcode.com/jasoncarr95/)
