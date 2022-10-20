@@ -1,3 +1,4 @@
+// Wed 10.12.22
 /*
 input:  number
 output: print every integer from 1 to that number
