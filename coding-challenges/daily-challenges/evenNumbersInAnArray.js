@@ -8,14 +8,14 @@
  * @return {array} length == n last n even numbers in same same order as og array
  */
 
-// function nLastEvenNumbers(arr, n) {
-//     // return n last even nums
+function nLastEvenNumbers(arr, n) {
+    // return n last even nums
 
-//     // filter arr to only include even nums
-//     console.log(arr.filter((num) => num % 2 === 0).slice(-n));
+    // filter arr to only include even nums
+    console.log(arr.filter((num) => num % 2 === 0).slice(-n));
 
-//     // slice to return n lenght
-// }
+    // slice to return n lenght
+}
 
 function nLastEvenNumbers(arr, n) {
     let result = [];
@@ -26,8 +26,8 @@ function nLastEvenNumbers(arr, n) {
     }
 }
 
-console.log(nLastEvenNumbers([1, 2, 3, 4, 5], 2)); // [2,4]
+nLastEvenNumbers([1, 2, 3, 4, 5], 2); // [2,4]
 
-console.log(nLastEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); // [4, 6, 8]
-console.log(nLastEvenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2)); // [-8, 26]
-console.log(nLastEvenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1)); // [6]
+nLastEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3); // [4, 6, 8]
+nLastEvenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2); // [-8, 26]
+nLastEvenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1); // [6]
