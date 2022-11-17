@@ -1,20 +1,22 @@
 /**
- *
- * @param {Array<number>} triplet 3 distinct numbers
- * @return {number} index of the middle number
- */
-
-/**
  *  find the middle number
  *  make arr copy, and sort it
  *  middle element will be sortedCopy[1]
  *  return indexOf middleElement in OG array
  */
+/**
+ *
+ * @param {Array<number>} arr 3 distinct numbers
+ * @return {number} index of the middle number
+ */
 
-function gimme(triplet) {
-    let sortedCopy = triplet.slice().sort((a, b) => a - b);
+function gimme(arr) {
+    let sortedCopy = arr.slice().sort((a, b) => a - b);
     let middleElement = sortedCopy[1];
-    return triplet.indexOf(middleElement);
+    return arr.indexOf(middleElement);
+}
+function gimme(arr) {
+    return arr.indexOf([...arr].sort((a, b) => a - b)[1]);
 }
 
 console.log(gimme([2, 3, 1]), "=> 0");
