@@ -20,6 +20,12 @@ function getNumArrayCombinations(array) {
     // return the length unqiueArrs ( maake sure each is actually unique)
 }
 
+// function getNumArrayCombinations(array) {
+//     let uniqueSubs = array.map((subArray) => [...new Set(subArray)]);
+//     let lengths = uniqueSubs.map((subArr) => subArr.length);
+//     return lengths.reduce((a, b) => a * b);
+// }
+
 console.log(getNumArrayCombinations([[1, 2], [4], [5, 6]]), "=> 4");
 // => 4 => [1,4,5], [1,4,6], [2, 4, 5], [2, 4, 6]
 

@@ -1,4 +1,4 @@
-const sumMix = require("../sumMixedArray-2022-10-18");
+const sumMix = require("../sumMixedArray");
 
 // assert.strictEqual(sumMix([9, 3, "7", "3"]), 22);
 // assert.strictEqual(sumMix(["5", "0", 9, 3, 2, 1, "9", 6, 7]), 42);

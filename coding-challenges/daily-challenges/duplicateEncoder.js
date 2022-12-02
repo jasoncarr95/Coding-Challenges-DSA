@@ -17,6 +17,7 @@
 // return as a string
 
 // return word encorded
+
 function duplicateEncode(word) {
     const chars = word.toLowerCase();
     return chars
@@ -28,11 +29,28 @@ function duplicateEncode(word) {
         })
         .join("");
 }
+console.log(duplicateEncode("Hello World"), ` => (()))(()()(`);
+console.log(duplicateEncode("Success", ` => )())())`));
 
-// console.log(duplicateEncode("Success"), "\n)())())");
+// function duplicateEncode(word) {
+//     const chars = word.toLowerCase().split("");
+//     const charMap = {};
+
+//     chars.forEach((char) => {
+//         char in charMap ? charMap[char]++ : (charMap[char] = 1);
+//     });
+
+//     let result = "";
+//     chars.forEach((char) => {
+//         charMap[char] > 1 ? (result += ")") : (result += "(");
+//     });
+//     return result;
+// }
+
+console.log(duplicateEncode("")); // => ""
+console.log(duplicateEncode("()() $! ")); // => ")))))(()"
+
+console.log(duplicateEncode("Success"), "\n)())())");
 console.log(duplicateEncode("Supralapsarian"));
 
-// console.log(duplicateEncode("Hello World")); // => "(()))(()()("
-// console.log(duplicateEncode("Success")); // => ")())())"
-// console.log(duplicateEncode("")); // => ""
-// console.log(duplicateEncode("()() $! ")); // => ")))))(()"
+duplicateEncode("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iste corrupti aperiam omnis perferendis eum quidem quo necessitatibus natus! Eveniet reiciendis est reprehenderit quo ullam praesentium amet aperiam veniam illo!")
