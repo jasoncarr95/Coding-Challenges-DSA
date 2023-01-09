@@ -1,6 +1,6 @@
 # About
 
-This repo contains my notes while prepping for the job hunt, and my solution to some coding challenges.
+This repo contains my solution to some coding challenges and some notes about DSA, etc.
 
 **Tech used:** <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
 
