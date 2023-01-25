@@ -1,5 +1,5 @@
 String.prototype.reverse = function () {
-    return this.split("").reverse().join("");
+  return this.split("").reverse().join("");
 };
 
 console.log("String".reverse()); // "gnirtS"

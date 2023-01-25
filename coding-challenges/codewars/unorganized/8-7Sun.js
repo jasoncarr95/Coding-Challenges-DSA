@@ -18,8 +18,8 @@ function findDifference(a, b) {
 //  Parmeters: given string with eitherflat road "_" or bumps "n"
 //  Return:   if bumps <= 15, gucci
 //  Example:
-    // console.log(bump("_nnnnnnn_n__n______nn__nn_nnn")); // "Car Dead"
-    // console.log(bump("n")); // "Woohoo!"
+// console.log(bump("_nnnnnnn_n__n______nn__nn_nnn")); // "Car Dead"
+// console.log(bump("n")); // "Woohoo!"
 
 //  PseudoCode:
 // split the str into an array of characters
@@ -32,4 +32,3 @@ function bump(x) {
 
   return bumps.length <= 15 ? "Woohoo!" : "Car Dead";
 }
-

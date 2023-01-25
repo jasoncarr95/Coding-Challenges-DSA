@@ -10,16 +10,15 @@
 // console.log(last("what time are we climbing up the volcano")); // ['time', 'are', 'we', 'the', 'climbing', 'volcano', 'up', 'what']);
 
 function last(x) {
-    let words = x.split(" ");
+  let words = x.split(" ");
 
-    return words.sort((a, b) => {
-        if (a.charAt(a.length - 1) < b.charAt(b.length - 1)) {
-            return -1;
-        }
-        if (a.charAt(a.length - 1) > b.charAt(b.length - 1)) {
-            return 1;
-        }
-        return 0;
-    });
+  return words.sort((a, b) => {
+    if (a.charAt(a.length - 1) < b.charAt(b.length - 1)) {
+      return -1;
+    }
+    if (a.charAt(a.length - 1) > b.charAt(b.length - 1)) {
+      return 1;
+    }
+    return 0;
+  });
 }
-

@@ -11,8 +11,8 @@ For more challenges and general job hunting resources, check out the [huntober t
 
 ## Acknowledgments
 
-Shout out to [@blawblawlaw](https://twitter.com/blawblawlaw), who runs said twitter account, made these challenges, and is  just great in general.
+Shout out to [@blawblawlaw](https://twitter.com/blawblawlaw), who runs said twitter account, made these challenges, and is just great in general.
 
 ## Other Code Challenges
 
-I also have a (much less organized) [repo](https://github.com/jasoncarr95/codewars) containing my  challenges done on [codewars](https://www.codewars.com/).
+I also have a (much less organized) [repo](https://github.com/jasoncarr95/codewars) containing my challenges done on [codewars](https://www.codewars.com/).

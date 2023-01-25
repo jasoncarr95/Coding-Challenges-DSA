@@ -11,17 +11,17 @@ creation method returns an array of length 2 containting opbjects
 */
 
 class God {
-    /**
-     * @returns Human[]
-     */
-    static create() {
-        return [new Man, new Woman]
-    }
+  /**
+   * @returns Human[]
+   */
+  static create() {
+    return [new Man(), new Woman()];
+  }
 }
 // code
 class Human {}
 class Man extends Human {}
 class Woman extends Human {}
 
-let humans = God.create()
-console.log(humans)
+let humans = God.create();
+console.log(humans);

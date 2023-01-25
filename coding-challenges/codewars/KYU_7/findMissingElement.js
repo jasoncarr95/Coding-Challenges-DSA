@@ -11,9 +11,9 @@
  */
 
 function findMissing(arr1, arr2) {
-    let sum1 = arr1.reduce((acc, curr) => acc + curr, 0);
-    let sum2 = arr2.reduce((acc, curr) => acc + curr, 0);
-    return sum1 - sum2;
+  let sum1 = arr1.reduce((acc, curr) => acc + curr, 0);
+  let sum2 = arr2.reduce((acc, curr) => acc + curr, 0);
+  return sum1 - sum2;
 }
 
 console.log(findMissing([1, 2, 2, 3], [1, 2, 3]), "=> 2");

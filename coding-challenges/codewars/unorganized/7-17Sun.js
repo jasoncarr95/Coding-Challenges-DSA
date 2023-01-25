@@ -71,10 +71,10 @@ String.prototype.toAlternatingCase = function () {
 //  insert dash '-' between each 2 odd numbers and asterik '*' between each 2 even
 // zero is neither even or odd
 // return as a string
-        // console.log(insertDashII(454793)); //  "4547-9-3"
-        // console.log(insertDashII(123456)); //  "123456"
-        // console.log(insertDashII(40546793)); //  "4054*67-9-3"
-        // console.log(insertDashII(0));
+// console.log(insertDashII(454793)); //  "4547-9-3"
+// console.log(insertDashII(123456)); //  "123456"
+// console.log(insertDashII(40546793)); //  "4054*67-9-3"
+// console.log(insertDashII(0));
 
 function insertDashII(num) {
   const isEven = (x) => x % 2 == 0 && x != 0;

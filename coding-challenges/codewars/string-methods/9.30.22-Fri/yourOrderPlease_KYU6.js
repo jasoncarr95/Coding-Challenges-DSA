@@ -1,15 +1,15 @@
 function order(words) {
-    function getNumberFromString(s) {
-        return Number(s.replace(/\D/g, ""));
-    }
+  function getNumberFromString(s) {
+    return Number(s.replace(/\D/g, ""));
+  }
 
-    return words
-        .split(" ")
-        .sort((a, b) => {
-            let numA = getNumberFromString(a);
-            let numB = getNumberFromString(b);
+  return words
+    .split(" ")
+    .sort((a, b) => {
+      let numA = getNumberFromString(a);
+      let numB = getNumberFromString(b);
 
-            return numA - numB;
-        })
-        .join(" ");
+      return numA - numB;
+    })
+    .join(" ");
 }

@@ -14,20 +14,20 @@
 // get product of non negs & sum of negs=> return those sums
 
 function mathEngine(arr) {
-    if (arr === null) return 0;
+  if (arr === null) return 0;
 
-    let negatives = arr
-        .filter((num) => num < 0)
-        .reduce((acc, curr) => {
-            return acc + curr;
-        }, 0);
-    let nonNegatives = arr
-        .filter((num) => num >= 0)
-        .reduce((acc, curr) => {
-            return acc * curr;
-        }, 1);
+  let negatives = arr
+    .filter((num) => num < 0)
+    .reduce((acc, curr) => {
+      return acc + curr;
+    }, 0);
+  let nonNegatives = arr
+    .filter((num) => num >= 0)
+    .reduce((acc, curr) => {
+      return acc * curr;
+    }, 1);
 
-    return negatives + nonNegatives;
+  return negatives + nonNegatives;
 }
 
 console.log(mathEngine([1, 2, 3, -4, -5])); // -3 => 1*2*3=6 + -4+-5=-9 6 + -9 => -3

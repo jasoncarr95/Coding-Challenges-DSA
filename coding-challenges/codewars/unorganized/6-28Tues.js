@@ -45,11 +45,11 @@ function array(str) {
 //  if nth is not positive, return -1
 //  42 = 00042 --> (45,5)--> 0
 //  Example:
-        // console.log(findDigit(5673, 4)); //  5
-        // console.log(findDigit(129, 2)); //  2
-        // console.log(findDigit(-2825, 3)); //  8
-        // console.log(findDigit(65, 0)); //  -1
-        // console.log(findDigit(-456, 4)); //  0
+// console.log(findDigit(5673, 4)); //  5
+// console.log(findDigit(129, 2)); //  2
+// console.log(findDigit(-2825, 3)); //  8
+// console.log(findDigit(65, 0)); //  -1
+// console.log(findDigit(-456, 4)); //  0
 //  PseudoCode:
 /*  1. get digits --> split num
             2. checks
@@ -66,6 +66,6 @@ function findDigit(num, nth) {
   else if (nth > numDigits.length) return 0;
   else {
     console.log(numDigits);
-    return Number(numDigits.slice(-nth)[0])
+    return Number(numDigits.slice(-nth)[0]);
   }
 }

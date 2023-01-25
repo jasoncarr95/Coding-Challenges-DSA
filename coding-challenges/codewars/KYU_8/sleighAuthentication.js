@@ -1,7 +1,7 @@
 function Sleigh() {}
 
 Sleigh.prototype.authenticate = function (name, password) {
-    return name == "Santa Claus" && password == "Ho Ho Ho!";
+  return name == "Santa Claus" && password == "Ho Ho Ho!";
 };
 
 var sleigh = new Sleigh();

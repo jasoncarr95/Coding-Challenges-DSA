@@ -20,22 +20,22 @@
  */
 
 String.prototype.characterCount = function (charsToCount) {
-    // check charsToCount.. if none, return undefined
-    if (!charsToCount) return undefined;
+  // check charsToCount.. if none, return undefined
+  if (!charsToCount) return undefined;
 
-    // store String function is being called in a variable as an array
-    const str = [...this];
+  // store String function is being called in a variable as an array
+  const str = [...this];
 
-    // get array of num occurences from arguments
-    const count = [...charsToCount].map(
-        (charToCount) => str.filter((char) => char === charToCount).length
-    );
+  // get array of num occurences from arguments
+  const count = [...charsToCount].map(
+    (charToCount) => str.filter((char) => char === charToCount).length
+  );
 
-    // if single char, return single number, else return arr
-    if (charsToCount.length === 1) {
-        return count[0];
-    }
-    return count;
+  // if single char, return single number, else return arr
+  if (charsToCount.length === 1) {
+    return count[0];
+  }
+  return count;
 };
 
 module.exports = String.prototype.characterCount;

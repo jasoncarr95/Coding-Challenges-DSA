@@ -19,20 +19,20 @@
 */
 
 function titleCase(title, minorWords = "") {
-    let words = title.toLowerCase().split(" ");
-    minorWords = minorWords.split(" ").map((word) => word.toLowerCase());
+  let words = title.toLowerCase().split(" ");
+  minorWords = minorWords.split(" ").map((word) => word.toLowerCase());
 
-    function capitalizeFirstLetter(word) {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-    }
+  function capitalizeFirstLetter(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }
 
-    return words
-        .map((word, index) => {
-            return minorWords.includes(word) && index !== 0
-                ? word
-                : capitalizeFirstLetter(word);
-        })
-        .join(" ");
+  return words
+    .map((word, index) => {
+      return minorWords.includes(word) && index !== 0
+        ? word
+        : capitalizeFirstLetter(word);
+    })
+    .join(" ");
 }
 console.log(titleCase("a clash of KINGS", "a an the of")); // should return: 'A Clash of Kings'
 console.log(titleCase("THE WIND IN THE WILLOWS", "The In")); // should return: 'The Wind in the Willows'

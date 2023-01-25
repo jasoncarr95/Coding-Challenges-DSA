@@ -28,55 +28,55 @@
 */
 
 const findValueInGrid = function (grid, value) {
-    let gridIndex, nestedArrIndex;
+  let gridIndex, nestedArrIndex;
 
-    for (let i = 0; i < grid.length; i++) {
-        if (grid[i].indexOf(value) >= 0) {
-            [gridIndex, nestedArrIndex] = [i, grid[i].indexOf(value)];
-        }
+  for (let i = 0; i < grid.length; i++) {
+    if (grid[i].indexOf(value) >= 0) {
+      [gridIndex, nestedArrIndex] = [i, grid[i].indexOf(value)];
     }
+  }
 
-    return [gridIndex, nestedArrIndex];
+  return [gridIndex, nestedArrIndex];
 };
 
 const shiftGridValueUp = function (grid, value) {
-    // Find value in the grid
-    let [gridIndex, nestedArrIndex] = findValueInGrid(grid, value);
+  // Find value in the grid
+  let [gridIndex, nestedArrIndex] = findValueInGrid(grid, value);
 
-    // if value is at the end already, return unmutated grid
-    if (gridIndex === 0) return grid;
+  // if value is at the end already, return unmutated grid
+  if (gridIndex === 0) return grid;
 
-    // store variable that we are swapping
-    let swappedValue = grid[gridIndex - 1][nestedArrIndex];
+  // store variable that we are swapping
+  let swappedValue = grid[gridIndex - 1][nestedArrIndex];
 
-    // swap variables
-    grid[gridIndex][nestedArrIndex] = swappedValue;
-    grid[gridIndex - 1][nestedArrIndex] = value;
-    // return mutated grid
-    return grid;
+  // swap variables
+  grid[gridIndex][nestedArrIndex] = swappedValue;
+  grid[gridIndex - 1][nestedArrIndex] = value;
+  // return mutated grid
+  return grid;
 };
 
 const shiftGridValueDown = function (grid, value) {
-    // Find value in the grid
-    let [gridIndex, nestedArrIndex] = findValueInGrid(grid, value);
+  // Find value in the grid
+  let [gridIndex, nestedArrIndex] = findValueInGrid(grid, value);
 
-    // if value is at the end already, return unmutated grid
-    if (gridIndex === grid.length - 1) return grid;
+  // if value is at the end already, return unmutated grid
+  if (gridIndex === grid.length - 1) return grid;
 
-    // store variable that we are swapping
-    let swappedValue = grid[gridIndex + 1][nestedArrIndex];
+  // store variable that we are swapping
+  let swappedValue = grid[gridIndex + 1][nestedArrIndex];
 
-    // swap variables
-    grid[gridIndex][nestedArrIndex] = swappedValue;
-    grid[gridIndex + 1][nestedArrIndex] = value;
-    // return mutated grid
-    return grid;
+  // swap variables
+  grid[gridIndex][nestedArrIndex] = swappedValue;
+  grid[gridIndex + 1][nestedArrIndex] = value;
+  // return mutated grid
+  return grid;
 };
 
 let myGrid = [
-    ["a", "b", "c"],
-    ["d", "e", "f"],
-    ["g", "h", "i"],
+  ["a", "b", "c"],
+  ["d", "e", "f"],
+  ["g", "h", "i"],
 ];
 
 console.log("OG Grid", myGrid);

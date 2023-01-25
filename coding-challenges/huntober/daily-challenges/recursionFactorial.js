@@ -6,9 +6,9 @@
  * @returns {number}
  */
 function factorial(n) {
-    // use recursion, 0! => 1
-    if (n === 0) return 1;
-    return n * factorial(n - 1);
+  // use recursion, 0! => 1
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
 }
 
 console.log(factorial(5), 120);

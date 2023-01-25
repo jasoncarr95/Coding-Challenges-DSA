@@ -1,12 +1,12 @@
 function replace(s) {
-    const vowels = "aeiouAEIOU";
+  const vowels = "aeiouAEIOU";
 
-    for (let char of s) {
-        if (vowels.includes(char)) {
-            s = s.replace(char, "!");
-        }
+  for (let char of s) {
+    if (vowels.includes(char)) {
+      s = s.replace(char, "!");
     }
-    return s;
+  }
+  return s;
 }
 
 console.log(replace("Hi!"), "H!!");

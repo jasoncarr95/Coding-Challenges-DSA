@@ -11,9 +11,6 @@
 // console.log(barista[4,3,2]);    //22
 // console.log(barista[25,5]);    //32
 
-
- 
-
 // function solve(s){
 //     let upper=0,lower=0,number=0,special=0;
 //     s = s.split('');
@@ -32,14 +29,13 @@
 //   }
 //   console.log(solve("Codewars@codewars123.com"));
 
-
 // function unusedDigits() {
 //     const digits = [0,1,2,3,4,5,6,7,8,9];
-    
+
 //     let used= Array.from(arguments).join('').split('').map(i => parseInt(i));
-//     console.log(used); 
+//     console.log(used);
 //     let unUsed='';
-//     digits.forEach(dig => 
+//     digits.forEach(dig =>
 //         {if(!used.includes(dig)) {
 //             unUsed+=dig
 //         } })

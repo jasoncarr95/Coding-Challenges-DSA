@@ -10,20 +10,20 @@
  * @returns {object} count of char occurences in str. i.e {'a': 2, 'b': 1}
  */
 export default function countCharsInString(str) {
-    // check if str is empty, if so return empty object
-    if (str.length === 0) return {};
-    // iniatialize empty object
-    const charCount = {};
-    // iterate over str, for each char
-    // check if char is a property in our obj.. if not initialize, else ++
-    for (const char of str) {
-        if (char in charCount) {
-            charCount[char]++;
-        } else {
-            charCount[char] = 1;
-        }
+  // check if str is empty, if so return empty object
+  if (str.length === 0) return {};
+  // iniatialize empty object
+  const charCount = {};
+  // iterate over str, for each char
+  // check if char is a property in our obj.. if not initialize, else ++
+  for (const char of str) {
+    if (char in charCount) {
+      charCount[char]++;
+    } else {
+      charCount[char] = 1;
     }
-    return charCount;
+  }
+  return charCount;
 }
 
 console.log(countCharsInString("aba"), { a: 2, b: 1 });

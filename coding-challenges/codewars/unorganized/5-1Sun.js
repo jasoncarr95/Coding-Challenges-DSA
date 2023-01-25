@@ -15,16 +15,16 @@
 //     return goodIdeas.length > 2 ? 'I smell a series!' : goodIdeas.length >= 1 ? 'Publish!' : 'Fail!' ;
 // }
 
-    // KYU 8    Sort and Star
+// KYU 8    Sort and Star
 // function twoSort(s) {
 //     return s.sort()[0].split('').join('***')
 // }
 
-    // KYU 8    Find the first non-consecutive number
-function firstNonConsecutive (arr) {
-    return arr.find((e,i) => i>0 &&  e[i]-1 != e[i-1])
+// KYU 8    Find the first non-consecutive number
+function firstNonConsecutive(arr) {
+  return arr.find((e, i) => i > 0 && e[i] - 1 != e[i - 1]);
 }
 
-// element 
+// element
 
-console.log(firstNonConsecutive([1,2,3,4,6,7,8]));
+console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));

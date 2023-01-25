@@ -22,19 +22,19 @@ order objects by property value
 // }
 
 function sentence(List) {
-    return List.sort((a, b) => Object.keys(a) - Object.keys(b))
-        .map((obj) => Object.values(obj))
-        .join(" ");
+  return List.sort((a, b) => Object.keys(a) - Object.keys(b))
+    .map((obj) => Object.values(obj))
+    .join(" ");
 }
 
 let List = [
-    { 4: "dog" },
-    { 2: "took" },
-    { 3: "his" },
-    { "-2": "Vatsan" },
-    { 5: "for" },
-    { 6: "a" },
-    { 12: "spin" },
+  { 4: "dog" },
+  { 2: "took" },
+  { 3: "his" },
+  { "-2": "Vatsan" },
+  { 5: "for" },
+  { 6: "a" },
+  { 12: "spin" },
 ];
 
 console.log(sentence(List)); // 'Vatsan took his dog for a spin'

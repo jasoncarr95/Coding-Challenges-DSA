@@ -15,12 +15,12 @@ charCodes (lowercase) = 97("a") through 122("z")
 // console.log(moveTen("codewards")); //  "mynogkbc"
 
 function moveTen(s) {
-    let result = s.split("").map((e) => {
-        let newCharCode = e.charCodeAt() + 10;
+  let result = s.split("").map((e) => {
+    let newCharCode = e.charCodeAt() + 10;
 
-        if (newCharCode <= 122) {
-            return String.fromCharCode(newCharCode);
-        } else return String.fromCharCode((newCharCode % 122) + 96);
-    });
-    return result.join("");
+    if (newCharCode <= 122) {
+      return String.fromCharCode(newCharCode);
+    } else return String.fromCharCode((newCharCode % 122) + 96);
+  });
+  return result.join("");
 }

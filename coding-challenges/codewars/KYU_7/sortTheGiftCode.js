@@ -13,7 +13,7 @@
 // return sorted arr as a string
 
 function sortGiftCode(code) {
-    return code.toLowerCase().split("").sort().join("");
+  return code.toLowerCase().split("").sort().join("");
 }
 
 const sortGiftCode = (code) => code.toLowerCase().split("").sort().join("");

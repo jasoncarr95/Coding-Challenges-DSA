@@ -8,12 +8,12 @@
  * @return {number}
  */
 var majorityElement = function (arr) {
-    const countOccurences = {};
-    for (const num of arr) {
-        countOccurences[num] = countOccurences[num] + 1 || 1;
-        if (countOccurences[num] > arr.length / 2) return num;
-    }
-    return -q;
+  const countOccurences = {};
+  for (const num of arr) {
+    countOccurences[num] = countOccurences[num] + 1 || 1;
+    if (countOccurences[num] > arr.length / 2) return num;
+  }
+  return -q;
 };
 // var majorityElement = function (arr) {
 //     const countOccurences = {};

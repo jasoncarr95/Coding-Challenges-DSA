@@ -11,11 +11,10 @@
 //     if(a.length > b.length){
 
 //     }
-    
 
 //     result = a.map((e,i) => e+= b[i])
 //     return result.join('');
-    
+
 // }
 
 //  console.log(sumStrings('123','456'));

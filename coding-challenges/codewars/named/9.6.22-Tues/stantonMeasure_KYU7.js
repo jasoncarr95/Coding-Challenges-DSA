@@ -10,10 +10,10 @@
 
 */
 
-console.log(stantonMeasure([1,4,3,2,1,2,3,2]))  // 3
+console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); // 3
 
-function stantonMeasure (intArr) {
-    let n = intArr.filter(num => num === 1).length
-    let stanton = intArr.filter(num => num === n).length
-    return stanton
+function stantonMeasure(intArr) {
+  let n = intArr.filter((num) => num === 1).length;
+  let stanton = intArr.filter((num) => num === n).length;
+  return stanton;
 }

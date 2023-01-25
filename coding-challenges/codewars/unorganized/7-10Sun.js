@@ -35,33 +35,29 @@ function calc(x) {
 
 //console.log(calc('ABC'));   //  6   //  total1=656667  total2=656661
 
-
-
 //  Sum of numbers from 0 to N  KYU 7
 
-var SequenceSum = (function() {
-    function SequenceSum() {}
-  
-    SequenceSum.showSequence = function(count) {
-      if(count < 0) return `${count}<0`
-      else if (count ===0) return '0=0'
-      let sum = 0
-      let str = ''
-      for(let i = 0; i < count; i++){
-          sum += i
-          str += i+'+'
-      }
-      return `${str}${count} = ${sum+count}`
-    };
-  
-    SequenceSum;
-  
-  })();
+var SequenceSum = (function () {
+  function SequenceSum() {}
 
+  SequenceSum.showSequence = function (count) {
+    if (count < 0) return `${count}<0`;
+    else if (count === 0) return "0=0";
+    let sum = 0;
+    let str = "";
+    for (let i = 0; i < count; i++) {
+      sum += i;
+      str += i + "+";
+    }
+    return `${str}${count} = ${sum + count}`;
+  };
+
+  SequenceSum;
+})();
 
 //  HELLO, NAME OR WORLD!     KYU 8
 function hello(name) {
-  if(!name) name = 'World'
-  let result = name.charAt(0).toUpperCase()+name.substring(1).toLowerCase()
-  return `Hello, ${result}!`
+  if (!name) name = "World";
+  let result = name.charAt(0).toUpperCase() + name.substring(1).toLowerCase();
+  return `Hello, ${result}!`;
 }

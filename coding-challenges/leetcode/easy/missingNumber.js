@@ -17,15 +17,15 @@
 
 // Beats 11.3% runtime // 83.7% mem
 var missingNumber = function (nums) {
-    for (let i = 0; i <= nums.length; i++) {
-        if (!nums.includes(i)) return i;
-    }
+  for (let i = 0; i <= nums.length; i++) {
+    if (!nums.includes(i)) return i;
+  }
 };
 
 // Beats 47.6% runtime // 52.64% mem
 var missingNumber = function (nums) {
-    const arrSum = (nums.length * (nums.length + 1)) / 2;
-    return arrSum - nums.reduce((a, b) => a + b, 0);
+  const arrSum = (nums.length * (nums.length + 1)) / 2;
+  return arrSum - nums.reduce((a, b) => a + b, 0);
 };
 
 console.log(missingNumber([3, 0, 1]), "=> 2");
@@ -40,28 +40,28 @@ console.log(missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]), "=> 8");
 
 // Javascript easy one
 var missingNumber = function (nums) {
-    var sum = 0;
-    for (let i = 0; i < nums.length; i++) {
-        sum += i + 1 - nums[i];
-    }
+  var sum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    sum += i + 1 - nums[i];
+  }
 
-    return sum;
+  return sum;
 };
 
 // [Javascript] Simple solution, faster than 99.08% submissions
 var missingNumber = function (nums) {
-    // construct array of size n+1, to leave a spot for the missing element.
-    // Assign each val to -1 so we can see which position was not filled
-    // O(n)
-    const res = new Array(nums.length + 1).fill(-1);
+  // construct array of size n+1, to leave a spot for the missing element.
+  // Assign each val to -1 so we can see which position was not filled
+  // O(n)
+  const res = new Array(nums.length + 1).fill(-1);
 
-    // "sort" the elements by assigning to the array based on val
-    // O(n)
-    for (const num of nums) {
-        res[num] = num;
-    }
+  // "sort" the elements by assigning to the array based on val
+  // O(n)
+  for (const num of nums) {
+    res[num] = num;
+  }
 
-    // the remaining -1 index is the missing value
-    // O(n-1)
-    return res.indexOf(-1);
+  // the remaining -1 index is the missing value
+  // O(n-1)
+  return res.indexOf(-1);
 };

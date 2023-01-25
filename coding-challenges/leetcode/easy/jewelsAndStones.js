@@ -5,28 +5,28 @@
  */
 
 function findJewels(jewels, stones) {
-    // iterate through our stones.. if it is a jewel, increment
-    let count = 0;
-    for (const char of stones) {
-        if (jewels.includes(char)) count++;
-    }
-    return count;
+  // iterate through our stones.. if it is a jewel, increment
+  let count = 0;
+  for (const char of stones) {
+    if (jewels.includes(char)) count++;
+  }
+  return count;
 }
 
 //// LEONS
 function findJewels(jewels, stones) {
-    const map = {};
-    let count = 0;
+  const map = {};
+  let count = 0;
 
-    for (const jewel of jewels) {
-        map[jewel] = true;
+  for (const jewel of jewels) {
+    map[jewel] = true;
+  }
+  for (const stone of stones) {
+    if (map[stone]) {
+      count++;
     }
-    for (const stone of stones) {
-        if (map[stone]) {
-            count++;
-        }
-    }
-    return count;
+  }
+  return count;
 }
 
 // console.log(findJewels("aA", "aAAbbbb"), "3");

@@ -17,21 +17,21 @@
 
 // OPTIMIZED SOLUTION
 function rankings(arr) {
-    // create sorted array for ranking
-    const sortedArr = arr.slice().sort((a, b) => b - a);
+  // create sorted array for ranking
+  const sortedArr = arr.slice().sort((a, b) => b - a);
 
-    // create map of scores to rankings
-    const rankingMap = new Map();
-    for (let i = 0; i < sortedArr.length; i++) {
-        rankingMap.set(sortedArr[i], i + 1);
-    }
+  // create map of scores to rankings
+  const rankingMap = new Map();
+  for (let i = 0; i < sortedArr.length; i++) {
+    rankingMap.set(sortedArr[i], i + 1);
+  }
 
-    // create array of rankings
-    const rankingArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        rankingArr.push(rankingMap.get(arr[i]));
-    }
-    return rankingArr;
+  // create array of rankings
+  const rankingArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    rankingArr.push(rankingMap.get(arr[i]));
+  }
+  return rankingArr;
 }
 // rankings: 30.146ms (0.03s) (100,000)
 
@@ -50,7 +50,7 @@ function rankings(arr) {
 console.time(`create array`);
 const arr = [];
 for (let i = 0; i < 500_000; i += 1) {
-    arr.push(Math.floor(Math.random() * 1_000_000));
+  arr.push(Math.floor(Math.random() * 1_000_000));
 }
 console.timeEnd(`create array`);
 

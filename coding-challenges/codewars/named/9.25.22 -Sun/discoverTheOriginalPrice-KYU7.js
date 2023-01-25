@@ -6,8 +6,8 @@ output: OG price: number in money form... x.xx
 */
 
 function discoverOriginalPrice(discountedPrice, salePercentage) {
-    salePercentage /= 100;
-    return Number((discountedPrice / (1 - salePercentage)).toFixed(2))
+  salePercentage /= 100;
+  return Number((discountedPrice / (1 - salePercentage)).toFixed(2));
 }
 
 console.log(discoverOriginalPrice(75, 25)); // 100

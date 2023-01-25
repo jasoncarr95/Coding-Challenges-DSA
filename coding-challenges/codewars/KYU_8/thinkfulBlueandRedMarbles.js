@@ -13,10 +13,10 @@ const { blue } = require("color-name");
 // return blue / total
 
 function guessBlue(blueStart, redStart, bluePulled, redPulled) {
-    let remainingBlue = blueStart - bluePulled;
-    let remainingRed = redStart - redPulled;
+  let remainingBlue = blueStart - bluePulled;
+  let remainingRed = redStart - redPulled;
 
-    return remainingBlue / (remainingBlue + remainingRed);
+  return remainingBlue / (remainingBlue + remainingRed);
 }
 
 console.log(guessBlue(5, 5, 2, 3), "=> 0.6"); // 3 blue, 2 red

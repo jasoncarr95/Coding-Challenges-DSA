@@ -33,11 +33,11 @@
 // }
 
 function averageLength(arr) {
-    const avgLength = Math.round(
-        arr.reduce((acc, curr) => acc + curr.length, 0) / arr.length
-    );
+  const avgLength = Math.round(
+    arr.reduce((acc, curr) => acc + curr.length, 0) / arr.length
+  );
 
-    return arr.map((subArr) => [subArr[0].repeat(avgLength)]);
+  return arr.map((subArr) => [subArr[0].repeat(avgLength)]);
 }
 
 console.log(averageLength(["u", "y"]), "=>  ['u', 'y']");
@@ -45,7 +45,7 @@ console.log(averageLength(["u", "y"]), "=>  ['u', 'y']");
 console.log(averageLength(["aa", "bbb", "cccc"]), "=> ['aaa', 'bbb', 'ccc']");
 // => average length is 3
 console.log(
-    averageLength(["aa", "bb", "ddd", "eee"]),
-    "=> ['aaa', 'bbb', 'ddd', 'eee']"
+  averageLength(["aa", "bb", "ddd", "eee"]),
+  "=> ['aaa', 'bbb', 'ddd', 'eee']"
 );
 // => average length is 2.5 round up to 3

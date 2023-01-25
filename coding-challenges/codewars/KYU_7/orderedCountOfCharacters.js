@@ -24,15 +24,12 @@
 // };
 
 const orderedCount = (text) => {
-    const arr = [...new Set([...text])];
-    return arr.map((char) => [
-        char,
-        [...text].filter((e) => e === char).length,
-    ]);
+  const arr = [...new Set([...text])];
+  return arr.map((char) => [char, [...text].filter((e) => e === char).length]);
 };
 
 console.log(
-    orderedCount("abracadabra"),
-    "=> [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]"
+  orderedCount("abracadabra"),
+  "=> [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]"
 );
 console.log(orderedCount("233312"), "=> [['2', 2], ['3', 3], ['1', 1 ]]");

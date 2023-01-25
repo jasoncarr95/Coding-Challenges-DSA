@@ -13,11 +13,11 @@
 // (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
 
 function sortMe(arr) {
-    return [...arr].sort((a, b) => {
-        const [x, y] = [a.toString().slice(-1), b.toString().slice(-1)];
-        if (x !== y) return x.localeCompare(y);
-        return arr.indexOf(a) - arr.indexOf(b);
-    });
+  return [...arr].sort((a, b) => {
+    const [x, y] = [a.toString().slice(-1), b.toString().slice(-1)];
+    if (x !== y) return x.localeCompare(y);
+    return arr.indexOf(a) - arr.indexOf(b);
+  });
 }
 
 console.log(sortMe(["acvd", "bcc"]));
@@ -28,21 +28,21 @@ console.log(sortMe(["bsde", "asdf", 14, "13"]), ["13", 14, "bsde", "asdf"]);
 
 console.log(sortMe(["asdf", 14, "13", "asdf"]), ["13", 14, "asdf", "asdf"]);
 console.log(sortMe(["xxxf", "aaaf", "kf", "f", "ooooof"]), [
-    "xxxf",
-    "aaaf",
-    "kf",
-    "f",
-    "ooooof",
+  "xxxf",
+  "aaaf",
+  "kf",
+  "f",
+  "ooooof",
 ]);
 console.log(sortMe(["xdxf", "xcxf", "xbxf", "xaxf"]), [
-    "xdxf",
-    "xcxf",
-    "xbxf",
-    "xaxf",
+  "xdxf",
+  "xcxf",
+  "xbxf",
+  "xaxf",
 ]);
 console.log(sortMe(["xdxf", "xcxa", "xbxf", "xaxf"]), [
-    "xcxa",
-    "xdxf",
-    "xbxf",
-    "xaxf",
+  "xcxa",
+  "xdxf",
+  "xbxf",
+  "xaxf",
 ]);

@@ -17,20 +17,20 @@
 gordon("i am a chef"); // '*!!!! @M!!!! @!!!! CH*F!!!!'
 
 function gordon(a) {
-    const vowels = ["E", "I", "O", "U"];
-    let words = a.toUpperCase().split(" ");
-    const vowelReplacer = function (word) {
-        return word
-            .split("")
-            .map((char) => {
-                return vowels.includes(char)
-                    ? (char = "*")
-                    : char === "A"
-                    ? (char = "@")
-                    : char;
-            })
-            .join("");
-    };
-    return words.map((word) => vowelReplacer(word)+"!!!!").join(" ");
+  const vowels = ["E", "I", "O", "U"];
+  let words = a.toUpperCase().split(" ");
+  const vowelReplacer = function (word) {
+    return word
+      .split("")
+      .map((char) => {
+        return vowels.includes(char)
+          ? (char = "*")
+          : char === "A"
+          ? (char = "@")
+          : char;
+      })
+      .join("");
+  };
+  return words.map((word) => vowelReplacer(word) + "!!!!").join(" ");
 }
 console.log(gordon("i am a chef")); // '*!!!! @M!!!! @!!!! CH*F!!!!'

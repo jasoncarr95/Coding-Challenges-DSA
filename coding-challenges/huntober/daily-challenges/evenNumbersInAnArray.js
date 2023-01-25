@@ -9,21 +9,21 @@
  */
 
 function nLastEvenNumbers(arr, n) {
-    // return n last even nums
+  // return n last even nums
 
-    // filter arr to only include even nums
-    console.log(arr.filter((num) => num % 2 === 0).slice(-n));
+  // filter arr to only include even nums
+  console.log(arr.filter((num) => num % 2 === 0).slice(-n));
 
-    // slice to return n lenght
+  // slice to return n lenght
 }
 
 function nLastEvenNumbers(arr, n) {
-    let result = [];
+  let result = [];
 
-    for (let i = arr.length - 1; i >= 0; i--) {
-        if (arr[i] % 2 === 0) result.unshift(arr[i]);
-        if (result.length == n) return result;
-    }
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] % 2 === 0) result.unshift(arr[i]);
+    if (result.length == n) return result;
+  }
 }
 
 nLastEvenNumbers([1, 2, 3, 4, 5], 2); // [2,4]

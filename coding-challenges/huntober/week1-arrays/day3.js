@@ -34,16 +34,16 @@
 */
 
 const fancyArrSort = (arr) => {
-    const containsA = arr.filter((str) => str.includes("a"));
-    let resultArr = arr
-        .filter((str) => !containsA.includes(str))
-        .sort((a, b) => {
-            return (a.length > 3) - (b.length > 3);
-        });
+  const containsA = arr.filter((str) => str.includes("a"));
+  let resultArr = arr
+    .filter((str) => !containsA.includes(str))
+    .sort((a, b) => {
+      return (a.length > 3) - (b.length > 3);
+    });
 
-    return containsA.concat(resultArr);
-    // console.log(`containsA: ${containsA}`)
-    // console.log(`resultArr: ${resultArr}`)
+  return containsA.concat(resultArr);
+  // console.log(`containsA: ${containsA}`)
+  // console.log(`resultArr: ${resultArr}`)
 };
 
 // const fancyArrSort = (arr) => {
@@ -56,5 +56,5 @@ let myArr = ["hi", "hello", "howdy", "hola", "hej", "hallo", "heyyy"];
 
 // console.log(myArr);
 console.log(fancyArrSort(myArr));
-fancyArrSort(myArr)
-console.log(myArr)
+fancyArrSort(myArr);
+console.log(myArr);

@@ -10,29 +10,29 @@
 // return statement based on total sum
 
 function boredom(staff) {
-    const boredScore = {
-        accounts: 1,
-        finance: 2,
-        canteen: 10,
-        regulation: 3,
-        trading: 6,
-        change: 6,
-        IS: 8,
-        retail: 5,
-        cleaning: 4,
-        "pissing about": 25,
-    };
-    const departments = Object.values(staff);
-    // console.log(departments);
-    const totalScore = departments
-        .map((dept) => boredScore[dept])
-        .reduce((a, b) => a + b, 0);
+  const boredScore = {
+    accounts: 1,
+    finance: 2,
+    canteen: 10,
+    regulation: 3,
+    trading: 6,
+    change: 6,
+    IS: 8,
+    retail: 5,
+    cleaning: 4,
+    "pissing about": 25,
+  };
+  const departments = Object.values(staff);
+  // console.log(departments);
+  const totalScore = departments
+    .map((dept) => boredScore[dept])
+    .reduce((a, b) => a + b, 0);
 
-    return totalScore <= 80
-        ? "kill me now"
-        : totalScore < 100
-        ? "i can handle this"
-        : "party time!!";
+  return totalScore <= 80
+    ? "kill me now"
+    : totalScore < 100
+    ? "i can handle this"
+    : "party time!!";
 }
 
 module.exports = boredom;

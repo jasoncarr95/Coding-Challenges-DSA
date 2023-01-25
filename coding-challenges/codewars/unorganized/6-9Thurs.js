@@ -95,19 +95,19 @@ function arrayMadness(a, b) {
 // first check if values are numbers... if neither return void, if both sum, if one that one
 // then for loop... for score number of iterations, result[].push x
 
-function explode(x){
-    const numbers = x.filter(e=> typeof e == 'number')
-    console.log(`nums ${numbers}`);
-    
-    const score = numbers.reduce((a,b)=>a+b,0)
-    if(numbers.length==0) return 'Void!'
-    else {
-        const result = []
-        for(let i = 1; i<= score; i++){
-            result.push(x)
-        }
-        return result
+function explode(x) {
+  const numbers = x.filter((e) => typeof e == "number");
+  console.log(`nums ${numbers}`);
+
+  const score = numbers.reduce((a, b) => a + b, 0);
+  if (numbers.length == 0) return "Void!";
+  else {
+    const result = [];
+    for (let i = 1; i <= score; i++) {
+      result.push(x);
     }
+    return result;
+  }
 }
 
 //  REMOVE THE MINIMUM   KYU 7
@@ -116,13 +116,13 @@ function explode(x){
 //  Example:
 
 //  PseudoCode:
-        //  find the smallest item in the array, remove that item and return the array
-        // Math.min(...arr)<= will that remove multiple if they are the same??
+//  find the smallest item in the array, remove that item and return the array
+// Math.min(...arr)<= will that remove multiple if they are the same??
 function removeSmallest(numbers) {
-    const indexRemove =numbers.indexOf(Math.min(...numbers))
-    const result = numbers.slice()
-    result.splice(indexRemove,1)
-    return result
+  const indexRemove = numbers.indexOf(Math.min(...numbers));
+  const result = numbers.slice();
+  result.splice(indexRemove, 1);
+  return result;
 }
-(removeSmallest([5,3,2,1,4]));   //  [5,3,2,4]
-(removeSmallest([2,2,1,2,1]));   //  [2,2,2,1]
+removeSmallest([5, 3, 2, 1, 4]); //  [5,3,2,4]
+removeSmallest([2, 2, 1, 2, 1]); //  [2,2,2,1]

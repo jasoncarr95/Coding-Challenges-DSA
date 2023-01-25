@@ -11,12 +11,12 @@
 // if not check :// remove that and all before
 
 function domainName(url) {
-    // remove ending of URL
-    let domain = url.replace("http://", "");
-    domain = domain.replace("https://", "");
-    domain = domain.replace("www.", "");
-    // return only portion before TLD
-    return domain.split(".")[0];
+  // remove ending of URL
+  let domain = url.replace("http://", "");
+  domain = domain.replace("https://", "");
+  domain = domain.replace("www.", "");
+  // return only portion before TLD
+  return domain.split(".")[0];
 }
 
 console.log(domainName("http://github.com")); // -> github

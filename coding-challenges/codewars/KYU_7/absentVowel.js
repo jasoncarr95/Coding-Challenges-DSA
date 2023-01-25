@@ -10,25 +10,25 @@
  * @return {number} index of the missing vowel
  */
 function absentVowel(str) {
-    const vowels = {
-        a: 0,
-        e: 1,
-        i: 2,
-        o: 3,
-        u: 4,
-    };
-    const vowelArray = str.split("").filter((char) => char in vowels);
+  const vowels = {
+    a: 0,
+    e: 1,
+    i: 2,
+    o: 3,
+    u: 4,
+  };
+  const vowelArray = str.split("").filter((char) => char in vowels);
 
-    for (const letter in vowels) {
-        if (!vowelArray.includes(letter)) return vowels[letter];
-    }
+  for (const letter in vowels) {
+    if (!vowelArray.includes(letter)) return vowels[letter];
+  }
 }
 
 console.log(
-    absentVowel("John Doe hs seven red pples under his bsket"),
-    `=>  0  ; missing: "a"`
+  absentVowel("John Doe hs seven red pples under his bsket"),
+  `=>  0  ; missing: "a"`
 );
 console.log(
-    absentVowel("Bb Smith sent us six neatly arranged range bicycles"),
-    `=>  3  ; missing: "o"`
+  absentVowel("Bb Smith sent us six neatly arranged range bicycles"),
+  `=>  3  ; missing: "o"`
 );

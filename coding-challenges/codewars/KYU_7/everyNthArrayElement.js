@@ -11,11 +11,11 @@
 // start always within bounds
 
 function every(arr, interval = 1, start = 0) {
-    const result = [];
-    for (let i = start; i < arr.length; i += interval) {
-        result.push(arr[i]);
-    }
-    return result;
+  const result = [];
+  for (let i = start; i < arr.length; i += interval) {
+    result.push(arr[i]);
+  }
+  return result;
 }
 
 const arr = [0, 1, 2, 3, 4, 5];

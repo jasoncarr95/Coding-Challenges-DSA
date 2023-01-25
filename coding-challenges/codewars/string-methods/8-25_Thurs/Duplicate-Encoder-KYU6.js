@@ -13,12 +13,12 @@
 */
 
 function duplicateEncode(word) {
-    word = word.toLowerCase();
-    let newWord = word.split("").map((char, index) => {
-        if (word.indexOf(char) === word.lastIndexOf(char)) return "(";
-        else return ")";
-    });
-    return newWord.join("");
+  word = word.toLowerCase();
+  let newWord = word.split("").map((char, index) => {
+    if (word.indexOf(char) === word.lastIndexOf(char)) return "(";
+    else return ")";
+  });
+  return newWord.join("");
 }
 
 // console.log(duplicateEncode("din")); // "((("

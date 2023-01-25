@@ -16,14 +16,14 @@
 */
 
 function alternateSqSum(arr) {
-    let sum = 0;
-    
-    arr.forEach((element, index) => {
-        if (index > 0 && index % 2 != 0) {
-            sum += element ** 2;
-        } else sum += element;
-    });
-    return sum;
+  let sum = 0;
+
+  arr.forEach((element, index) => {
+    if (index > 0 && index % 2 != 0) {
+      sum += element ** 2;
+    } else sum += element;
+  });
+  return sum;
 }
 // console.log(alternateSqSum([11, 12, 13, 14, 15])); // should return 379
 

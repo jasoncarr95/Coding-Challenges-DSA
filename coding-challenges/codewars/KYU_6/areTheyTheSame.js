@@ -24,16 +24,16 @@
 // };
 
 function comp(array1, array2) {
-    let arr1 = array1.sort((a, b) => a - b);
-    let arr2 = array2.sort((a, b) => a - b);
+  let arr1 = array1.sort((a, b) => a - b);
+  let arr2 = array2.sort((a, b) => a - b);
 
-    let passing = true;
-    arr1.forEach((num, index) => {
-        console.log(`${num} => ${arr2[index]}`);
-        if (num ** 2 !== arr2[index]) passing = false;
-    });
+  let passing = true;
+  arr1.forEach((num, index) => {
+    console.log(`${num} => ${arr2[index]}`);
+    if (num ** 2 !== arr2[index]) passing = false;
+  });
 
-    return passing;
+  return passing;
 }
 
 a = [121, 144, 19, 161, 19, 144, 19, 11];

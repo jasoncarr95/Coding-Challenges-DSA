@@ -10,6 +10,6 @@
 */
 
 function findLongest(array) {
-    let lengths = array.map((el, ind) => String(el).length);
-    return array[lengths.indexOf(Math.max(...lengths))];
+  let lengths = array.map((el, ind) => String(el).length);
+  return array[lengths.indexOf(Math.max(...lengths))];
 }

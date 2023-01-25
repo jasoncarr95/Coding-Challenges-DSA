@@ -15,24 +15,24 @@ when it’s divisible by both 2 and 3, print out “Fizz Buzz”.
  * console.log each num/str
  */
 function fizzBuzz(n) {
-    for (let i = 1; i <= n; i++) {
-        if (i % 2 === 0 && i % 3 === 0) {
-            console.log("Fizz Buzz");
-        } else if (i % 2 === 0) {
-            console.log("Fizz");
-        } else if (i % 3 === 0) {
-            console.log("Buzz");
-        } else {
-            console.log(i);
-        }
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0 && i % 3 === 0) {
+      console.log("Fizz Buzz");
+    } else if (i % 2 === 0) {
+      console.log("Fizz");
+    } else if (i % 3 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
     }
+  }
 }
 
 console.log(
-    fizzBuzz(10),
-    `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz"`
+  fizzBuzz(10),
+  `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz"`
 );
 console.log(
-    fizzBuzz(15),
-    `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz", 11, "Fizz Buzz", 13, "Fizz", "Fizz Buzz"`
+  fizzBuzz(15),
+  `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz", 11, "Fizz Buzz", 13, "Fizz", "Fizz Buzz"`
 );

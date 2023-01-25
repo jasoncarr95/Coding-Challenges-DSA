@@ -20,16 +20,16 @@
  * @return {boolean}
  */
 var containsDuplicate = function (nums) {
-    // iterate through nums, check if theres a duplicate (nums[i] occurs more than once)
+  // iterate through nums, check if theres a duplicate (nums[i] occurs more than once)
 
-    const map = [];
-    for (const num of nums) {
-        console.log(map);
-        if (num in map) return true;
-        else map.push(num);
-    }
+  const map = [];
+  for (const num of nums) {
     console.log(map);
-    return false;
+    if (num in map) return true;
+    else map.push(num);
+  }
+  console.log(map);
+  return false;
 };
 // var containsDuplicate = function (nums) {
 //     // iterate through nums, check if theres a duplicate (nums[i] occurs more than once)

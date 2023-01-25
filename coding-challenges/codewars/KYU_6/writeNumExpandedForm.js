@@ -13,18 +13,19 @@
 // add expanded digits to a string to be returned.. with + inbetween unless its the last digit
 
 function expandedForm(num) {
-    let result = "";
-    num.toString()
-        .split("")
-        .forEach((digit, index, arr) => {
-            let numZeros = arr.length - 1 - index;
-            let expanded = digit + "0".repeat(numZeros);
-            if (index == 0) result = expanded;
-            else if (digit != 0) {
-                result += ` + ${expanded}`;
-            }
-        });
-    return result;
+  let result = "";
+  num
+    .toString()
+    .split("")
+    .forEach((digit, index, arr) => {
+      let numZeros = arr.length - 1 - index;
+      let expanded = digit + "0".repeat(numZeros);
+      if (index == 0) result = expanded;
+      else if (digit != 0) {
+        result += ` + ${expanded}`;
+      }
+    });
+  return result;
 }
 
 console.log(expandedForm(12), " Should return '10 + 2'");

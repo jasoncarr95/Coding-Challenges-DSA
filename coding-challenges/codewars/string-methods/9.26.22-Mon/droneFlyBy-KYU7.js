@@ -14,12 +14,12 @@
 */
 
 function flyBy(lamps, drone) {
-    return lamps
-        .split("")
-        .map((item, index) => {
-            return index < drone.length ? "o" : item;
-        })
-        .join("");
+  return lamps
+    .split("")
+    .map((item, index) => {
+      return index < drone.length ? "o" : item;
+    })
+    .join("");
 }
 
 console.log(flyBy("xxxxxxxxx", "==T")); // "oooooox"

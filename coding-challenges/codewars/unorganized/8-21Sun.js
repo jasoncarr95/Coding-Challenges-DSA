@@ -15,10 +15,10 @@
 // O(n)
 
 function inAscOrder(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > arr[i + 1]) return false;
-    }
-    return true;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i + 1]) return false;
+  }
+  return true;
 }
 
 //  Make acronym    KYU 7
@@ -30,22 +30,19 @@ function inAscOrder(arr) {
 // console.log(toAcronym("what it do babyyy")); // "WIDB"
 
 function toAcronym(inp) {
-    return inp
-        .split(" ")
-        .map((e) => e[0].toUpperCase())
-        .join("");
+  return inp
+    .split(" ")
+    .map((e) => e[0].toUpperCase())
+    .join("");
 }
 
 function numberToPower(number, power) {
-    let result = 1;
-    for (let i = 0; i < power; i++) {
-        result *= number;
-    }
-    return result;
+  let result = 1;
+  for (let i = 0; i < power; i++) {
+    result *= number;
+  }
+  return result;
 }
 
 //   console.log(numberToPower(3,2));  //   9 (3*3)
 // console.log(numberToPower(2, 3)); // 8 (2*2*2)
-
-
-

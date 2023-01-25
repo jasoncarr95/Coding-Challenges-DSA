@@ -11,12 +11,12 @@
 // return "errorCount/str.length"
 
 function printerError(str) {
-    const correctChars = "abcdefghijklm";
-    let errorCount = 0;
-    for (let char of str) {
-        if (!correctChars.includes(char)) errorCount++;
-    }
-    return `${errorCount}/${str.length}`;
+  const correctChars = "abcdefghijklm";
+  let errorCount = 0;
+  for (let char of str) {
+    if (!correctChars.includes(char)) errorCount++;
+  }
+  return `${errorCount}/${str.length}`;
 }
 
 console.log(printerError("aaabbbbhaijjjm"), " => 0/14");

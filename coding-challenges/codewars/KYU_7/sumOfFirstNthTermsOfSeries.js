@@ -21,16 +21,16 @@
  * @returns {string} sum of series up to nth number
  */
 function SeriesSum(n) {
-    if (n === 0) return "0.00";
-    if (n === 1) return "1.00";
+  if (n === 0) return "0.00";
+  if (n === 1) return "1.00";
 
-    const denominator = (x) => 3 * (x - 1) + 1;
+  const denominator = (x) => 3 * (x - 1) + 1;
 
-    let result = 1;
-    for (let i = n; i > 1; i = -i) {
-        result += 1 / denominator(i);
-    }
-    return result.toFixed(2);
+  let result = 1;
+  for (let i = n; i > 1; i = -i) {
+    result += 1 / denominator(i);
+  }
+  return result.toFixed(2);
 }
 
 console.log(SeriesSum(0), "0.00");

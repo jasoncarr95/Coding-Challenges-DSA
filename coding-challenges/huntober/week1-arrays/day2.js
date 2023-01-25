@@ -22,45 +22,44 @@
 */
 
 const shiftLeft = (arr, item) => {
-    if(arr.indexOf(item) === 0) return arr
-    else{
-        let itemIndex = arr.indexOf(item)
-        let swappedValue = arr[itemIndex - 1]
-        arr[itemIndex] = swappedValue
-        arr[itemIndex - 1] = item
-        return arr
-    }
-}
+  if (arr.indexOf(item) === 0) return arr;
+  else {
+    let itemIndex = arr.indexOf(item);
+    let swappedValue = arr[itemIndex - 1];
+    arr[itemIndex] = swappedValue;
+    arr[itemIndex - 1] = item;
+    return arr;
+  }
+};
 
 const shiftRight = (arr, item) => {
-    if(arr.indexOf(item) === arr.length - 1)  return arr
-    else{
-        let itemIndex = arr.indexOf(item)
-        let swappedValue = arr[itemIndex + 1]
-        arr[itemIndex] = swappedValue
-        arr[itemIndex + 1] = item
-        return arr
-    }
-}
+  if (arr.indexOf(item) === arr.length - 1) return arr;
+  else {
+    let itemIndex = arr.indexOf(item);
+    let swappedValue = arr[itemIndex + 1];
+    arr[itemIndex] = swappedValue;
+    arr[itemIndex + 1] = item;
+    return arr;
+  }
+};
 
+const myArray = ["abc", "xyz", 1, 2, "Hey!"];
+console.log(myArray);
 
-const myArray = ['abc', 'xyz', 1, 2, 'Hey!']
-console.log(myArray)
-
-shiftLeft(myArray, "xyz")
+shiftLeft(myArray, "xyz");
 // call move left function with 'xyz' and myArray as arguments
-console.log(myArray)   // ['xyz', 'abc', 1, 2, 'Hey!']
+console.log(myArray); // ['xyz', 'abc', 1, 2, 'Hey!']
 
-shiftLeft(myArray, "xyz")
+shiftLeft(myArray, "xyz");
 // call move left function again, same arguments
 // Note that 'xyz' is already as far left as it can go
-console.log(myArray) // ['xyz', 'abc', 1, 2, 'Hey!'] no change
+console.log(myArray); // ['xyz', 'abc', 1, 2, 'Hey!'] no change
 
-shiftRight(myArray, 2)
+shiftRight(myArray, 2);
 // call move right function this time, with 2 and myArray as arguments
-console.log(myArray) // ['xyz', 'abc', 1, 'Hey!', 2]
+console.log(myArray); // ['xyz', 'abc', 1, 'Hey!', 2]
 
-shiftRight(myArray, 2)
+shiftRight(myArray, 2);
 // call move right function again, same arguments
 // Note that 2 is already as far right as it can go
-console.log(myArray) // ['xyz', 'abc', 1, 'Hey!', 2] no change
+console.log(myArray); // ['xyz', 'abc', 1, 'Hey!', 2] no change

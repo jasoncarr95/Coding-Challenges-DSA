@@ -16,8 +16,8 @@
 // }
 
 const nthSmallest = (array, n) => {
-    array.sort((a, b) => a - b);
-    return array[n - 1];
+  array.sort((a, b) => a - b);
+  return array[n - 1];
 };
 
 console.log(nthSmallest([1, 2, 3, 4, 5], 2), "=> 2"); // 2

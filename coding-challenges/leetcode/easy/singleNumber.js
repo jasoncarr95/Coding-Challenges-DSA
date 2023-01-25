@@ -15,16 +15,16 @@
  */
 
 var singleNumber = function (nums) {
-    const numMap = {};
-    nums.forEach((num) => {
-        // return num in numMap ? numMap[num]++ : (numMap[num] = 1);
+  const numMap = {};
+  nums.forEach((num) => {
+    // return num in numMap ? numMap[num]++ : (numMap[num] = 1);
 
-        if (numMap[num] == null) numMap[num] = 0;
-        numMap[num]++;
-    });
-    for (const num in numMap) {
-        if (numMap[num] !== 2) return num;
-    }
+    if (numMap[num] == null) numMap[num] = 0;
+    numMap[num]++;
+  });
+  for (const num in numMap) {
+    if (numMap[num] !== 2) return num;
+  }
 };
 
 console.log(singleNumber([2, 2, 1]), "=> 1");

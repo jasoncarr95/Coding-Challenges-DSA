@@ -18,8 +18,8 @@
 // console.log(removeRotten(null))
 // console.log(removeRotten([]))
 function removeRotten(bagOfFruits) {
-    if (!bagOfFruits || bagOfFruits.length < 1) return [];
-    return bagOfFruits.map((fruit) => {
-        return !fruit.includes("rotten") ? fruit : fruit.slice(6).toLowerCase();
-    });
+  if (!bagOfFruits || bagOfFruits.length < 1) return [];
+  return bagOfFruits.map((fruit) => {
+    return !fruit.includes("rotten") ? fruit : fruit.slice(6).toLowerCase();
+  });
 }

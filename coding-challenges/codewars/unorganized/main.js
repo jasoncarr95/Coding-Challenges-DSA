@@ -1,9 +1,9 @@
-document.querySelector('#date').innerHTML=Date()
+document.querySelector("#date").innerHTML = Date();
 
 // const humanYearsCatYearsDogYears = function(humanYears) {
 //     let catYears = 0;
 //     let dogYears = 0;
-    
+
 //     for(i=1;i<=humanYears;i++){
 //       if (i==1){
 //         catYears += 15;
@@ -18,4 +18,4 @@ document.querySelector('#date').innerHTML=Date()
 //     }
 //     return [humanYears,catYears,dogYears];
 // }
-// console.log(humanYearsCatYearsDogYears(3)); 
+// console.log(humanYearsCatYearsDogYears(3));

@@ -29,51 +29,51 @@
  * @param {number} defense
  */
 function calculateDamage(yourType, opponentType, attack, defense) {
-    function calcEffectiveness(yourType, opponentType) {
-        // YOUR TYPE : opponent -> returns effectiveness
-        const effectivenessMap = {
-            fire: {
-                grass: 2,
-                water: 0.5,
-                electric: 1,
-            },
-            water: {
-                grass: 0.5,
-                electric: 0.5,
-                fire: 2,
-            },
-            grass: {
-                water: 2,
-                electric: 1,
-                fire: 0.5,
-            },
-            electric: {
-                grass: 1,
-                water: 2,
-                fire: 1,
-            },
-        };
-        if (yourType === opponentType) return 0.5;
-        return effectivenessMap[yourType][opponentType];
-    }
-    // function calcEffectiveness(yourType, opponentType) {
-    //     // YOUR TYPE : opponent -> returns effectiveness
-    //     const strength = {
-    //         fire: "grass",
-    //         water: "fire",
-    //         electric: "water",
-    //         grass: "water",
-    //     };
-    //     if (yourType === opponentType) return 0.5;
-    //     if (yourType === strength[opponentType]) return 0.5;
-    //     if (opponentType === strength[yourType]) return 2;
-    //     return 1;
-    //     // return effectivenessMap[yourType][opponentType];
-    // }
+  function calcEffectiveness(yourType, opponentType) {
+    // YOUR TYPE : opponent -> returns effectiveness
+    const effectivenessMap = {
+      fire: {
+        grass: 2,
+        water: 0.5,
+        electric: 1,
+      },
+      water: {
+        grass: 0.5,
+        electric: 0.5,
+        fire: 2,
+      },
+      grass: {
+        water: 2,
+        electric: 1,
+        fire: 0.5,
+      },
+      electric: {
+        grass: 1,
+        water: 2,
+        fire: 1,
+      },
+    };
+    if (yourType === opponentType) return 0.5;
+    return effectivenessMap[yourType][opponentType];
+  }
+  // function calcEffectiveness(yourType, opponentType) {
+  //     // YOUR TYPE : opponent -> returns effectiveness
+  //     const strength = {
+  //         fire: "grass",
+  //         water: "fire",
+  //         electric: "water",
+  //         grass: "water",
+  //     };
+  //     if (yourType === opponentType) return 0.5;
+  //     if (yourType === strength[opponentType]) return 0.5;
+  //     if (opponentType === strength[yourType]) return 2;
+  //     return 1;
+  //     // return effectivenessMap[yourType][opponentType];
+  // }
 
-    const effectiveness = calcEffectiveness(yourType, opponentType);
-    const damage = 50 * (attack / defense) * effectiveness;
-    return damage;
+  const effectiveness = calcEffectiveness(yourType, opponentType);
+  const damage = 50 * (attack / defense) * effectiveness;
+  return damage;
 }
 
 console.log(calculateDamage("fire", "water", 100, 100), 25);

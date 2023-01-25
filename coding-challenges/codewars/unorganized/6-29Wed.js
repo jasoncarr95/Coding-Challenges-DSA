@@ -46,5 +46,3 @@ function shortcut(string) {
     if (vowels.includes(string[i])) string[i] = "";
   }
 }
-
-

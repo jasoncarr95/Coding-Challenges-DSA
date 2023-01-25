@@ -16,12 +16,12 @@ PSUEDO:
  * @return {string[]} remove consecutive dupe letters from each str
  */
 function dup(str) {
-    return str.map((word) =>
-        word
-            .split("")
-            .filter((letter, index, arr) => letter !== arr[index - 1])
-            .join("")
-    );
+  return str.map((word) =>
+    word
+      .split("")
+      .filter((letter, index, arr) => letter !== arr[index - 1])
+      .join("")
+  );
 }
 // function dup(str) {
 //     function removeDuplicateLetters(word) {
@@ -34,8 +34,8 @@ function dup(str) {
 //     return str.map((word) => removeDuplicateLetters(word));
 // }
 console.log(
-    dup(["abracadabra", "allottee", "assessee"]),
-    ` => ["abracadabra","alote","asese"]`
+  dup(["abracadabra", "allottee", "assessee"]),
+  ` => ["abracadabra","alote","asese"]`
 );
 console.log(dup(["kelless", "keenness"]), ` => ["keles","kenes"]`);
 console.log(dup(["hello", "world"]), ` => ["helo", "world"]`);

@@ -10,15 +10,15 @@ return boolean
  * @returns {Boolean}
  */
 function isLucky(n) {
-    // get sum of all digits
-    // num -> toString -> to arr -> reduce -> sum
-    if (n === 0) return true;
-    const sum = n
-        .toString()
-        .split("")
-        .reduce((acc, curr) => acc + Number(curr), 0);
-    // check value of sum
-    return sum % 9 === 0;
+  // get sum of all digits
+  // num -> toString -> to arr -> reduce -> sum
+  if (n === 0) return true;
+  const sum = n
+    .toString()
+    .split("")
+    .reduce((acc, curr) => acc + Number(curr), 0);
+  // check value of sum
+  return sum % 9 === 0;
 }
 
 console.log(isLucky(1892376), true);

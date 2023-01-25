@@ -19,5 +19,3 @@
 // console.log(getMiddle('test')); //es
 // console.log(getMiddle('testing')); //t
 // console.log(getMiddle('A')); //A
-
-

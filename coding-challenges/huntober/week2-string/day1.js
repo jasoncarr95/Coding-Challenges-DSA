@@ -22,38 +22,42 @@
 */
 
 function repairString(str) {
-    const repairObject = {
-        0: "O",
-        5: "S",
-        1: "I",
-        6: "G",
-        2: "Z",
-        7: "L",
-        3: "E",
-        8: "B",
-        4: "h",
-        9: "q",
-        O: "0",
-        S: "5",
-        I: "1",
-        G: "6",
-        Z: "2",
-        L: "7",
-        E: "3",
-        B: "8",
-        h: "4",
-        q: "9",
-    };
+  const repairObject = {
+    0: "O",
+    5: "S",
+    1: "I",
+    6: "G",
+    2: "Z",
+    7: "L",
+    3: "E",
+    8: "B",
+    4: "h",
+    9: "q",
+    O: "0",
+    S: "5",
+    I: "1",
+    G: "6",
+    Z: "2",
+    L: "7",
+    E: "3",
+    B: "8",
+    h: "4",
+    q: "9",
+  };
 
-    const replaceChar = (char) => repairObject[char];
+  const replaceChar = (char) => repairObject[char];
 
-    return str
-        .split("")
-        .map((char) => (repairObject[char] ? replaceChar(char) : char))
-        .join("");
+  return str
+    .split("")
+    .map((char) => (repairObject[char] ? replaceChar(char) : char))
+    .join("");
 }
 
 console.log(repairString("O"));
 
 console.log(repairString("PR0-T1P #hqB: 1T'5 N1C3 T0 5AY H3770.")); // "PRO-TIP #498: IT'S NICE TO SAY HELLO.";
-console.log(repairString("e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs"))
+console.log(
+  repairString(
+    "e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs"
+  )
+);

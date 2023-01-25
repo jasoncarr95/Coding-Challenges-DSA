@@ -11,9 +11,9 @@
     
 */
 
-Array.prototype.sum = function(){
-    return [...this].reduce((a,b) => a+b,0)
-}
+Array.prototype.sum = function () {
+  return [...this].reduce((a, b) => a + b, 0);
+};
 
-let arr = [1,2,3,4]
-console.log(arr.sum())
+let arr = [1, 2, 3, 4];
+console.log(arr.sum());

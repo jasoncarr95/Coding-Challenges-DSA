@@ -18,7 +18,7 @@
 
 // REFACTORED
 var uniqueInOrder = function (iterable) {
-    return [...iterable].filter((item, index) => item !== iterable[index + 1]);
+  return [...iterable].filter((item, index) => item !== iterable[index + 1]);
 };
 
 console.log(uniqueInOrder("AAAABBBCCDAABBB")); // ['A', 'B', 'C', 'D', 'A', 'B']

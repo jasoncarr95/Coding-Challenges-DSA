@@ -5,23 +5,23 @@
  */
 
 const filterString = (value) => {
-    // split the string into an array of characters
-    const chars = value.split("");
-    // filter the array to only include numbers
-    const nums = chars.filter((char) => {
-        return !isNaN(char);
-    });
-    // join the array of numbers into a string
-    const numString = nums.join("");
-    // convert the string to a number
-    const num = Number(numString);
-    return num;
+  // split the string into an array of characters
+  const chars = value.split("");
+  // filter the array to only include numbers
+  const nums = chars.filter((char) => {
+    return !isNaN(char);
+  });
+  // join the array of numbers into a string
+  const numString = nums.join("");
+  // convert the string to a number
+  const num = Number(numString);
+  return num;
 };
 
 var filterStringV2 = function (value) {
-    const numbers = value.split("").filter((char) => !isNaN(char));
+  const numbers = value.split("").filter((char) => !isNaN(char));
 
-    return Number(numbers.join(""));
+  return Number(numbers.join(""));
 };
 
 // Test Cases

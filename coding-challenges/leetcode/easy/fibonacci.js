@@ -39,13 +39,13 @@
  * @returns {number}
  */
 function fibonacci(n) {
-    // x == x-1 + x-2
-    const fib = [0, 1];
-    for (let i = 2; i <= n; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
-        // console.log(fib[i]);
-    }
-    return fib[fib.length - 1];
+  // x == x-1 + x-2
+  const fib = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+    // console.log(fib[i]);
+  }
+  return fib[fib.length - 1];
 }
 
 console.log(fibonacci(2), "=> 1"); //Explanation: F(2) = F(1) + F(0) = 1 + 0 = 1.

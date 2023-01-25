@@ -4,9 +4,9 @@
  */
 
 function reverse(array) {
-    const reversed = [];
-    array.forEach((item) => reversed.unshift(item));
-    return reversed;
+  const reversed = [];
+  array.forEach((item) => reversed.unshift(item));
+  return reversed;
 }
 
 console.log(reverse([1, 2, 3])); // [3,2,1]

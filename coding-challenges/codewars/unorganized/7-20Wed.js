@@ -5,19 +5,13 @@ function playerRankUp(points) {
     : false;
 }
 
-
-const isReallyNaN1 = Number.isNaN
+const isReallyNaN1 = Number.isNaN;
 
 const isReallyNaN2 = (val) => {
-    return val != val
+  return val != val;
 };
 
-    // console.log(isReallyNaN(37))
-    // console.log(isReallyNaN('37'))
-    // console.log(isReallyNaN(NaN))
-    // console.log(isReallyNaN(undefined))
-
-  
-
-
-  
+// console.log(isReallyNaN(37))
+// console.log(isReallyNaN('37'))
+// console.log(isReallyNaN(NaN))
+// console.log(isReallyNaN(undefined))

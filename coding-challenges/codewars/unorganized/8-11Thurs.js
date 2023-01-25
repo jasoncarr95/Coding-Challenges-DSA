@@ -7,9 +7,9 @@
 //  PseudoCode:
 
 function execute(action, nTimes) {
-    for (let i = 0; i < nTimes; i++) {
-        action();
-    }
+  for (let i = 0; i < nTimes; i++) {
+    action();
+  }
 }
 
 //  Multiply Word in String   KYU 7
@@ -25,14 +25,14 @@ function execute(action, nTimes) {
 // join together with '-' as a delim
 
 function modifyMultiply(str, loc, num) {
-    let arrWords = str.split(" ");
-    let targetWord = arrWords[loc];
-    let result = targetWord;
+  let arrWords = str.split(" ");
+  let targetWord = arrWords[loc];
+  let result = targetWord;
 
-    for (let i = 1; i < num; i++) {
-        result += `-${targetWord}`;
-    }
-    return result;
+  for (let i = 1; i < num; i++) {
+    result += `-${targetWord}`;
+  }
+  return result;
 }
 
 //  Adding Arrays   KYU 7
@@ -41,25 +41,25 @@ function modifyMultiply(str, loc, num) {
 // combine by index to create a word
 //  Example:
 console.log(
-    arrAdder([
-        ["J", "L", "L", "M"],
-        ["u", "i", "i", "a"],
-        ["s", "v", "f", "n"],
-        ["t", "e", "e", ""],
-    ])
+  arrAdder([
+    ["J", "L", "L", "M"],
+    ["u", "i", "i", "a"],
+    ["s", "v", "f", "n"],
+    ["t", "e", "e", ""],
+  ])
 ); // => "Just Live Life Man"
 
 //  PseudoCode:
-    // iterate over parent array 
-    // for each element 
+// iterate over parent array
+// for each element
 
 function arrAdder(arr) {
-    let result = ""
-    for(let i = 0; i < arr[0].length; i++){
-        for(let j = 0; j < arr.length; j++){
-            result+= arr[j][i]
-        }
-        result += " "
+  let result = "";
+  for (let i = 0; i < arr[0].length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      result += arr[j][i];
     }
-    return result.trim()
+    result += " ";
+  }
+  return result.trim();
 }

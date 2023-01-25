@@ -28,17 +28,15 @@
 // }
 
 function stringTransformer(str) {
-    return str
-        .split(" ")
-        .reverse()
-        .join(" ")
-        .split("")
-        .map((char) =>
-            char === char.toUpperCase()
-                ? char.toLowerCase()
-                : char.toUpperCase()
-        )
-        .join("");
+  return str
+    .split(" ")
+    .reverse()
+    .join(" ")
+    .split("")
+    .map((char) =>
+      char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()
+    )
+    .join("");
 }
 
 console.log(stringTransformer("Example Input"), "\niNPUT eXAMPLE");

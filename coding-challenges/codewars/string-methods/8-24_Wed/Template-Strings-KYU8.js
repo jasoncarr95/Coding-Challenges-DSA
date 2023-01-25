@@ -1,3 +1,3 @@
-const TempleStrings = function(obj, feature) {
-  return `${obj} are ${feature}`
-}
+const TempleStrings = function (obj, feature) {
+  return `${obj} are ${feature}`;
+};

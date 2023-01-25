@@ -19,16 +19,16 @@ PSUEDO
  */
 
 const removeConsecutiveDuplicates = (str) => {
-    if (str.length < 1) return "";
-    let arr = str.split(" ");
-    return arr.filter((word, index) => arr[index - 1] !== word).join(" ");
+  if (str.length < 1) return "";
+  let arr = str.split(" ");
+  return arr.filter((word, index) => arr[index - 1] !== word).join(" ");
 };
 
 console.log(
-    removeConsecutiveDuplicates(
-        "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
-    )
-    // --> "alpha beta gamma delta alpha beta gamma delta"
+  removeConsecutiveDuplicates(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+  )
+  // --> "alpha beta gamma delta alpha beta gamma delta"
 );
 console.log(removeConsecutiveDuplicates("Hello world")); // "Hello World"
 console.log(removeConsecutiveDuplicates("")); // ""

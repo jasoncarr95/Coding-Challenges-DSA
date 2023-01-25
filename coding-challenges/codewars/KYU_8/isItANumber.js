@@ -2,7 +2,7 @@
 // return boolean.. true= single integer/float
 
 function isDigit(s) {
-    return parseFloat(s) === Number(s);
+  return parseFloat(s) === Number(s);
 }
 
 console.log(isDigit("3")); // true

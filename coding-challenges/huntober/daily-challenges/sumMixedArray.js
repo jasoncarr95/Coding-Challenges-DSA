@@ -10,7 +10,7 @@
 // }
 
 function sumMix(arr) {
-    return arr.reduce((prev, cur) => Number(prev) + Number(cur), 0);
+  return arr.reduce((prev, cur) => Number(prev) + Number(cur), 0);
 }
 
 // function sumMix(arr) {

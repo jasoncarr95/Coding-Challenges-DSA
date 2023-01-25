@@ -12,13 +12,13 @@
  */
 
 function evaporator(content, evap_per_day, threshold) {
-    let days = 0;
-    let gas = 100;
-    while (gas >= threshold) {
-        gas -= (gas * evap_per_day) / 100;
-        days++;
-    }
-    return days;
+  let days = 0;
+  let gas = 100;
+  while (gas >= threshold) {
+    gas -= (gas * evap_per_day) / 100;
+    days++;
+  }
+  return days;
 }
 console.log(evaporator(10, 10, 5), "=> 29"); // 10mL,  10% per day lost, < 5% no longer useful
 //

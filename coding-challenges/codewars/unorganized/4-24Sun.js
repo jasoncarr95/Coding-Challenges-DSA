@@ -1,10 +1,10 @@
 // function findOddDigits(n, k) {
 //     let oddDigits = '';
-//     n.toString().split('').forEach((dig) => {    
+//     n.toString().split('').forEach((dig) => {
 //         if(!(parseInt(dig) % 2 == 0)){oddDigits+=(Number(dig))}
 //     })
 //     return oddDigits.length < k ? 0 : Number(oddDigits.slice(0,k)) || 0;
-    
+
 // }
 
 // function giveChange(amount) {
@@ -49,21 +49,20 @@
 // //console.log( giveChange(217));  //[2,1,1,0,0,2]
 // //console.log( giveChange(8));    //[3,1,0,0,0]
 
-
 // function mergeArrays(arr1, arr2) {
 //     let result = (arr1.concat(arr2).sort((a,b)=> a-b))
-//     return Array.from(new Set(result)) 
+//     return Array.from(new Set(result))
 // }
 // console.log( mergeArrays([1,2,3,4], [5,6,7,8])); //[1,2,3,4,5,6,7,8]
 // console.log( mergeArrays([1,3,5,7,9], [10,8,6,4,2])); // [1,2,3,4,5,6,7,8,9,10]
 
-function isAllPossibilities(x){
-    let allVals = [];
-    for(let i=0; i<= x.length-1; i++){
-        allVals.push(i)
-    }
-    return x.every(num => allVals.includes(num))
+function isAllPossibilities(x) {
+  let allVals = [];
+  for (let i = 0; i <= x.length - 1; i++) {
+    allVals.push(i);
+  }
+  return x.every((num) => allVals.includes(num));
 }
 
-console.log(isAllPossibilities([0,1,2,3]));     //true
-console.log(isAllPossibilities([1,2,3,4]));      //false
+console.log(isAllPossibilities([0, 1, 2, 3])); //true
+console.log(isAllPossibilities([1, 2, 3, 4])); //false

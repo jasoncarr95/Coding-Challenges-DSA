@@ -11,11 +11,11 @@
 // reduce method to sum the absolute value
 
 function sumDigits(number) {
-    let digits = Math.abs(number).toString().split("");
+  let digits = Math.abs(number).toString().split("");
 
-    return digits.reduce((acc, curr) => {
-        return Number(acc) + Number(curr);
-    }, 0);
+  return digits.reduce((acc, curr) => {
+    return Number(acc) + Number(curr);
+  }, 0);
 }
 
 console.log(sumDigits(10), "1 + 0 => 1");

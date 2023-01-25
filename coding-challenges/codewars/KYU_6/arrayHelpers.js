@@ -15,29 +15,29 @@ if empty return 0 except NaN for avg
 const nums = [1, 2, 3, 4, 5];
 
 Array.prototype.square = function () {
-    return this.map((num) => num ** 2);
+  return this.map((num) => num ** 2);
 };
 
 Array.prototype.cube = function () {
-    return this.map((num) => num ** 3);
+  return this.map((num) => num ** 3);
 };
 
 Array.prototype.average = function () {
-    if (this.length < 1) return NaN;
-    else {
-        return this.reduce((acc, cur) => acc + cur) / this.length;
-    }
+  if (this.length < 1) return NaN;
+  else {
+    return this.reduce((acc, cur) => acc + cur) / this.length;
+  }
 };
 Array.prototype.sum = function () {
-    return this.reduce((acc, cur) => acc + cur, 0);
+  return this.reduce((acc, cur) => acc + cur, 0);
 };
 
 Array.prototype.even = function () {
-    return this.filter((num) => num % 2 === 0);
+  return this.filter((num) => num % 2 === 0);
 };
 
 Array.prototype.odd = function () {
-    return this.filter((num) => num % 2 !== 0);
+  return this.filter((num) => num % 2 !== 0);
 };
 
 // test cases

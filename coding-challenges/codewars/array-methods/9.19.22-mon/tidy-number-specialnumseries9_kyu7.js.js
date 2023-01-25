@@ -16,13 +16,13 @@ console.log(tidyNumber(32)); // false
 console.log(tidyNumber(1024)); // false 1,0,2,4 --> 0<=1
 
 function tidyNumber(n) {
-    let digits = n
-        .toString()
-        .split("")
-        .map((e) => Number(e));
+  let digits = n
+    .toString()
+    .split("")
+    .map((e) => Number(e));
 
-    for (let i = 0; i < digits.length; i++) {
-        if (digits[i] > digits[i + 1]) return false;
-    }
-    return true;
+  for (let i = 0; i < digits.length; i++) {
+    if (digits[i] > digits[i + 1]) return false;
+  }
+  return true;
 }

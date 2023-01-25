@@ -14,8 +14,8 @@
 //
 
 var isSquare = function (arr) {
-    if (arr.length < 1) return undefined;
-    return arr.every((num) => Number.isInteger(Math.sqrt(num)));
+  if (arr.length < 1) return undefined;
+  return arr.every((num) => Number.isInteger(Math.sqrt(num)));
 };
 
 console.log(isSquare([1, 4, 9, 16, 25])); // true

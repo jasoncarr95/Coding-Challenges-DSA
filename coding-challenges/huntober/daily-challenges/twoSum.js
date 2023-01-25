@@ -40,21 +40,21 @@
  * @returns {array[]}
  */
 function twoSum(numbers, sum) {
-    const pairs = [];
-    const complements = new Set();
+  const pairs = [];
+  const complements = new Set();
 
-    for (const number of numbers) {
-        if (complements.has(number)) {
-            pairs.push([number, sum - number]);
-        } else {
-            complements.add(sum - number);
-        }
+  for (const number of numbers) {
+    if (complements.has(number)) {
+      pairs.push([number, sum - number]);
+    } else {
+      complements.add(sum - number);
     }
+  }
 
-    return pairs;
+  return pairs;
 }
 
 console.log(twoSum([1, 2, 2, 3, 4], 4), "=>", [
-    [2, 2],
-    [3, 1],
+  [2, 2],
+  [3, 1],
 ]);

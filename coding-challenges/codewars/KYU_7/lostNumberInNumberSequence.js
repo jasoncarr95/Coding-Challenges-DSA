@@ -13,11 +13,11 @@
 // get difference between the totals ==> deleted num
 
 function findDeletedNumber(arr, mixArr) {
-    if (arr.length === mixArr.length) return 0;
+  if (arr.length === mixArr.length) return 0;
 
-    let sumArr = arr.reduce((acc, curr) => acc + curr, 0);
-    let sumMixArr = mixArr.reduce((acc, curr) => acc + curr, 0);
-    return sumArr - sumMixArr;
+  let sumArr = arr.reduce((acc, curr) => acc + curr, 0);
+  let sumMixArr = mixArr.reduce((acc, curr) => acc + curr, 0);
+  return sumArr - sumMixArr;
 }
 
 console.log(findDeletedNumber([1, 2, 3, 4, 5], [2, 4, 1, 5]), `=> 3`); // 3

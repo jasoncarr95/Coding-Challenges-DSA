@@ -31,17 +31,17 @@
 // }
 
 function movie(card, ticket, perc) {
-    let systemA = 0,
-        systemB = card,
-        trips = 0;
+  let systemA = 0,
+    systemB = card,
+    trips = 0;
 
-    while (Math.ceil(systemA) <= Math.ceil(systemB)) {
-        ++trips;
-        systemB += ticket * Math.pow(perc, trips);
-        systemA += ticket;
-    }
+  while (Math.ceil(systemA) <= Math.ceil(systemB)) {
+    ++trips;
+    systemB += ticket * Math.pow(perc, trips);
+    systemA += ticket;
+  }
 
-    return trips;
+  return trips;
 }
 
 console.log(movie(500, 15, 0.9), "=> 43"); // should return 43

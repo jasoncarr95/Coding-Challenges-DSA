@@ -11,19 +11,19 @@
 // return our result
 
 function deleteNth(arr, n) {
-    let result = [];
-    let trackerObj = {};
+  let result = [];
+  let trackerObj = {};
 
-    for (let motif of arr) {
-        // if (motif in trackerObj) {
-        //     trackerObj[motif]++;
-        // } else trackerObj[motif] = 1;
+  for (let motif of arr) {
+    // if (motif in trackerObj) {
+    //     trackerObj[motif]++;
+    // } else trackerObj[motif] = 1;
 
-        motif in trackerObj ? trackerObj[motif]++ : (trackerObj[motif] = 1);
+    motif in trackerObj ? trackerObj[motif]++ : (trackerObj[motif] = 1);
 
-        if (trackerObj[motif] <= n) result.push(motif);
-    }
-    return result;
+    if (trackerObj[motif] <= n) result.push(motif);
+  }
+  return result;
 }
 
 console.log(deleteNth([1, 2, 3, 1, 2, 1, 2, 3], 2)); // [1,2,3,1,2,3]

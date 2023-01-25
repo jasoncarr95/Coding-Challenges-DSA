@@ -1,10 +1,10 @@
 function f(n) {
-    // check if n is a positive, integer number.. if not return false
-    if (typeof n !== "number") return false;
-    if (n < 1 || !Number.isInteger(n)) return false;
-    // use gaus's sum to get sum of all numbers 1-n
+  // check if n is a positive, integer number.. if not return false
+  if (typeof n !== "number") return false;
+  if (n < 1 || !Number.isInteger(n)) return false;
+  // use gaus's sum to get sum of all numbers 1-n
 
-    return (n * (1 + n)) / 2;
+  return (n * (1 + n)) / 2;
 }
 
 console.log(f(100), 5050);

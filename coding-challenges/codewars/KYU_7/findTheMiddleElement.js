@@ -11,12 +11,12 @@
  */
 
 function gimme(arr) {
-    let sortedCopy = arr.slice().sort((a, b) => a - b);
-    let middleElement = sortedCopy[1];
-    return arr.indexOf(middleElement);
+  let sortedCopy = arr.slice().sort((a, b) => a - b);
+  let middleElement = sortedCopy[1];
+  return arr.indexOf(middleElement);
 }
 function gimme(arr) {
-    return arr.indexOf([...arr].sort((a, b) => a - b)[1]);
+  return arr.indexOf([...arr].sort((a, b) => a - b)[1]);
 }
 
 console.log(gimme([2, 3, 1]), "=> 0");

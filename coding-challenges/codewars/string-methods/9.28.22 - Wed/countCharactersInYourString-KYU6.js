@@ -13,13 +13,13 @@
 */
 
 function count(string) {
-    return string.split("").reduce((allLetters, letter) => {
-        const currCount = allLetters[letter] ?? 0;
-        return {
-            ...allLetters,
-            [letter]: currCount + 1,
-        };
-    }, {});
+  return string.split("").reduce((allLetters, letter) => {
+    const currCount = allLetters[letter] ?? 0;
+    return {
+      ...allLetters,
+      [letter]: currCount + 1,
+    };
+  }, {});
 }
 
 console.log(count("aba")); //  { 'a': 2, 'b': 1}

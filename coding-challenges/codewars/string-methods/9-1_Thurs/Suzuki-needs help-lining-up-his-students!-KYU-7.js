@@ -8,14 +8,14 @@
         - sort by length 
     */
 console.log(
-    lineupStudents(
-        "Tadashi Takahiro Takao Takashi Takayuki Takehiko Takeo Takeshi Takeshi"
-    )
+  lineupStudents(
+    "Tadashi Takahiro Takao Takashi Takayuki Takehiko Takeo Takeshi Takeshi"
+  )
 );
 // ['Takehiko','Takayuki','Takahiro','Takeshi', 'Takeshi','Takashi','Tadashi','Takeo','Takao']
 
 function lineupStudents(students) {
-    return students
-        .split(" ")
-        .sort((a, b) => b.length - a.length || b.localeCompare(a));
+  return students
+    .split(" ")
+    .sort((a, b) => b.length - a.length || b.localeCompare(a));
 }

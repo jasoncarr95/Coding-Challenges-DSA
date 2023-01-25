@@ -9,31 +9,31 @@
 */
 
 function shuffleArray(multArr) {
-    for (let i = 0; i < multArr.length; i++) {
-        for (let j = 0; j < multArr[i].length; j++) {
-            let i1 = Math.floor(Math.random() * multArr.length);
-            let j1 = Math.floor(Math.random() * multArr.length);
+  for (let i = 0; i < multArr.length; i++) {
+    for (let j = 0; j < multArr[i].length; j++) {
+      let i1 = Math.floor(Math.random() * multArr.length);
+      let j1 = Math.floor(Math.random() * multArr.length);
 
-            let temp = multArr[i][j];
-            multArr[i][j] = multArr[i1][j1];
-            multArr[i1][j1] = temp;
-        }
+      let temp = multArr[i][j];
+      multArr[i][j] = multArr[i1][j1];
+      multArr[i1][j1] = temp;
     }
-    return multArr;
+  }
+  return multArr;
 }
 
 let myArray = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
 ];
 console.log(shuffleArray(myArray));
 
 console.log(
-    shuffleArray([
-        ["hello", "friend"],
-        ["I'm", "Jason"],
-    ])
+  shuffleArray([
+    ["hello", "friend"],
+    ["I'm", "Jason"],
+  ])
 );
 
 // function Shuffle(arguments) {

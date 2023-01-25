@@ -16,19 +16,21 @@ numbers given correspond to alphabet position in reverse order
 */
 
 function switcher(x) {
-    const charMap = {
-        27: "!",
-        28: "?",
-        29: " ",
-    };
+  const charMap = {
+    27: "!",
+    28: "?",
+    29: " ",
+  };
 
-    let nums = x.map(char => Number(char))
-    
-    return nums.map(num => {
-        return num in charMap ? charMap[num] :
-        String.fromCharCode(Math.abs(num -27) + 96)
+  let nums = x.map((char) => Number(char));
 
-    }).join("")
+  return nums
+    .map((num) => {
+      return num in charMap
+        ? charMap[num]
+        : String.fromCharCode(Math.abs(num - 27) + 96);
+    })
+    .join("");
 }
 
 console.log(switcher(["24", "12", "23", "22", "4", "26", "9", "8"]));
@@ -38,22 +40,21 @@ console.log(switcher(["4", "24"])); // "wc"
 
 console.log(switcher(["4", "24", "27", "28", "29"])); // "wc"
 
-
 console.log(
-    switcher([
-        "25",
-        "7",
-        "8",
-        "4",
-        "14",
-        "23",
-        "8",
-        "25",
-        "23",
-        "29",
-        "16",
-        "16",
-        "4",
-    ])
+  switcher([
+    "25",
+    "7",
+    "8",
+    "4",
+    "14",
+    "23",
+    "8",
+    "25",
+    "23",
+    "29",
+    "16",
+    "16",
+    "4",
+  ])
 );
 // 'btswmdsbd kkw'

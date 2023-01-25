@@ -114,5 +114,5 @@ const db = {
   welsh: "Croeso",
 };
 function greet(language) {
-  return db[language] || db["english"]
+  return db[language] || db["english"];
 }

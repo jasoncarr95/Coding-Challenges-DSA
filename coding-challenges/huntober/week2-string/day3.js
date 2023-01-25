@@ -1,6 +1,6 @@
 // Day 3 (from Monday 10/3) Completed Tues 10/4
 
-const key = "Space".split("")
+const key = "Space".split("");
 // S,p,a,c,e
 
 // remove any instances of key characters with an empty space " "
@@ -13,13 +13,15 @@ const key = "Space".split("")
     - return joined string
 */
 
-function replaceCharsWithSpace (str, keys=[ 'S', 'p', 'a', 'c', 'e' ]){
-
-    return str.split("").map(char => keys.includes(char) ? " " : char).join("")
+function replaceCharsWithSpace(str, keys = ["S", "p", "a", "c", "e"]) {
+  return str
+    .split("")
+    .map((char) => (keys.includes(char) ? " " : char))
+    .join("");
 }
 
-const exampleString = "Space Balls in ur mouf"
-console.log(replaceCharsWithSpace(exampleString))
+const exampleString = "Space Balls in ur mouf";
+console.log(replaceCharsWithSpace(exampleString));
 //      B lls in ur mouf
 
 // console.log(replaceCharsWithSpace('AyouEcould!thinkKthisAisYhard_toYreadKbeforeYreplacingEthe_keyYcharacters',['A','_','K','E','Y','!'] ))

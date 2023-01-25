@@ -19,15 +19,15 @@
 // return word encorded
 
 function duplicateEncode(word) {
-    const chars = word.toLowerCase();
-    return chars
-        .split("")
-        .map((char) => {
-            if (chars.indexOf(char) === chars.lastIndexOf(char)) {
-                return "(";
-            } else return ")";
-        })
-        .join("");
+  const chars = word.toLowerCase();
+  return chars
+    .split("")
+    .map((char) => {
+      if (chars.indexOf(char) === chars.lastIndexOf(char)) {
+        return "(";
+      } else return ")";
+    })
+    .join("");
 }
 console.log(duplicateEncode("Hello World"), ` => (()))(()()(`);
 console.log(duplicateEncode("Success", ` => )())())`));
@@ -53,4 +53,6 @@ console.log(duplicateEncode("()() $! ")); // => ")))))(()"
 console.log(duplicateEncode("Success"), "\n)())())");
 console.log(duplicateEncode("Supralapsarian"));
 
-duplicateEncode("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iste corrupti aperiam omnis perferendis eum quidem quo necessitatibus natus! Eveniet reiciendis est reprehenderit quo ullam praesentium amet aperiam veniam illo!")
+duplicateEncode(
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iste corrupti aperiam omnis perferendis eum quidem quo necessitatibus natus! Eveniet reiciendis est reprehenderit quo ullam praesentium amet aperiam veniam illo!"
+);

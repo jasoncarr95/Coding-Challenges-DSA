@@ -14,12 +14,12 @@
 */
 
 function calculateAge(birthYear, yearToCalcAge) {
-    const diff = yearToCalcAge - birthYear;
-    if (diff === 0) return "You were born this very year!";
-    if (diff === -1) return `You will be born in ${Math.abs(diff)} year.`;
-    if (diff < -1) return `You will be born in ${Math.abs(diff)} years.`;
-    if (diff > 1) return `You are ${diff} years old.`;
-    if (diff == 1) return `You are ${diff} year old.`;
+  const diff = yearToCalcAge - birthYear;
+  if (diff === 0) return "You were born this very year!";
+  if (diff === -1) return `You will be born in ${Math.abs(diff)} year.`;
+  if (diff < -1) return `You will be born in ${Math.abs(diff)} years.`;
+  if (diff > 1) return `You are ${diff} years old.`;
+  if (diff == 1) return `You are ${diff} year old.`;
 }
 
 console.log(calculateAge(2012, 2016), "You are 4 years old.");

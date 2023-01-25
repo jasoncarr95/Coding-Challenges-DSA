@@ -31,10 +31,10 @@ console.log(runningSum([3, 1, 2, 10, 1])); // [3,4,6,16,17]
 console.log(runningSum([1, 2, -1, 0])); // [1,3,2,2]
 
 function runningSum(nums) {
-    let run = [];
-    nums.reduce((previous, current, index) => {
-        run.push(previous + current);
-        return previous + current;
-    }, 0);
-    return run;
+  let run = [];
+  nums.reduce((previous, current, index) => {
+    run.push(previous + current);
+    return previous + current;
+  }, 0);
+  return run;
 }

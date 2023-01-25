@@ -15,35 +15,35 @@ decode: turn numbers back into letters (all numbers will correspond to vowels)
 */
 
 function encode(string) {
-    const swapMap = {
-        a: 1,
-        e: 2,
-        i: 3,
-        o: 4,
-        u: 5,
-    };
-    return string
-        .split("")
-        .map((char) =>
-            Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char
-        )
-        .join("");
+  const swapMap = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+  return string
+    .split("")
+    .map((char) =>
+      Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char
+    )
+    .join("");
 }
 
 function decode(string) {
-    const swapMap = {
-        1: "a",
-        2: "e",
-        3: "i",
-        4: "o",
-        5: "u",
-    };
-    return string
-        .split("")
-        .map((char) =>
-            Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char
-        )
-        .join("");
+  const swapMap = {
+    1: "a",
+    2: "e",
+    3: "i",
+    4: "o",
+    5: "u",
+  };
+  return string
+    .split("")
+    .map((char) =>
+      Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char
+    )
+    .join("");
 }
 
 console.log(encode("hello")); //  "h2ll4"

@@ -17,12 +17,12 @@
 // sort => by last char of each word
 // return as an arr
 function last(x) {
-    let words = x.split(" ");
-    return x.split(" ").sort((a, b) => {
-        let lastA = a.charAt(a.length - 1);
-        let lastB = b.charAt(b.length - 1);
-        return lastA.localeCompare(lastB);
-    });
+  let words = x.split(" ");
+  return x.split(" ").sort((a, b) => {
+    let lastA = a.charAt(a.length - 1);
+    let lastB = b.charAt(b.length - 1);
+    return lastA.localeCompare(lastB);
+  });
 }
 
 console.log(last("man i need a taxi up to ubud"));

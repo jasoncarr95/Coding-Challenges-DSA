@@ -34,37 +34,40 @@
 */
 
 const swapLettersForOpposite = function (str) {
-    const checkIfLetter = (char) => {
-        return char.toUpperCase() !== char.toLowerCase();
-    };
-    const isUpperCase = (char) => {
-        return char === char.toUpperCase();
-    };
-    const switchLetterCase = (char) => {
-        if (char === char.toUpperCase()) {
-            return char.toLowerCase();
-        } else return char.toUpperCase();
-    };
-    const swapLetterPosition = (char) => {
-        // gets position of alphabet 1 - 26
-        // gets position of alphabet 1 - 26
-        let originalPosition = isUpperCase(char)
-            ? char.charCodeAt() - 64
-            : char.charCodeAt() - 96;
-        let newPosition = Math.abs(originalPosition - 27);
-        console.log(newPosition);
-        return isUpperCase(char)
-            ? String.fromCharCode(newPosition + 64)
-            : String.fromCharCode(newPosition + 96);
-    };
-    let newStr = str.split("").map((char, index) => {
-        if(!checkIfLetter(char)) return char
-        else {
-            let newLetter = switchLetterCase(char)
-            return swapLetterPosition(newLetter)
-        }
-    }).join("")
-    return newStr
+  const checkIfLetter = (char) => {
+    return char.toUpperCase() !== char.toLowerCase();
+  };
+  const isUpperCase = (char) => {
+    return char === char.toUpperCase();
+  };
+  const switchLetterCase = (char) => {
+    if (char === char.toUpperCase()) {
+      return char.toLowerCase();
+    } else return char.toUpperCase();
+  };
+  const swapLetterPosition = (char) => {
+    // gets position of alphabet 1 - 26
+    // gets position of alphabet 1 - 26
+    let originalPosition = isUpperCase(char)
+      ? char.charCodeAt() - 64
+      : char.charCodeAt() - 96;
+    let newPosition = Math.abs(originalPosition - 27);
+    console.log(newPosition);
+    return isUpperCase(char)
+      ? String.fromCharCode(newPosition + 64)
+      : String.fromCharCode(newPosition + 96);
+  };
+  let newStr = str
+    .split("")
+    .map((char, index) => {
+      if (!checkIfLetter(char)) return char;
+      else {
+        let newLetter = switchLetterCase(char);
+        return swapLetterPosition(newLetter);
+      }
+    })
+    .join("");
+  return newStr;
 };
 
 console.log(swapLettersForOpposite("A")); // 'z'
@@ -73,7 +76,7 @@ console.log(swapLettersForOpposite("vCZNKOV: 0 MFNYVI LI KFMXGFZGRLM XSZMTVH"));
 
 // const swapLetterPosition = (char) => {
 const isUpperCase = (char) => {
-    return char === char.toUpperCase();
+  return char === char.toUpperCase();
 };
 //     // gets position of alphabet 1 - 26
 //     let originalPosition = isUpperCase(char) ? char.charCodeAt() - 64 : char.charCodeAt() - 96
@@ -81,17 +84,17 @@ const isUpperCase = (char) => {
 // }
 
 const swapLetterPosition = (char) => {
-    const isUpperCase = (char) => {
-        return char === char.toUpperCase();
-    };
-    // gets position of alphabet 1 - 26
-    let originalPosition = isUpperCase(char)
-        ? char.charCodeAt() - 64
-        : char.charCodeAt() - 96;
-    let newPosition = Math.abs(originalPosition - 27);
-    console.log(newPosition);
-    return isUpperCase(char)
-        ? String.fromCharCode(newPosition + 64)
-        : String.fromCharCode(newPosition + 96);
+  const isUpperCase = (char) => {
+    return char === char.toUpperCase();
+  };
+  // gets position of alphabet 1 - 26
+  let originalPosition = isUpperCase(char)
+    ? char.charCodeAt() - 64
+    : char.charCodeAt() - 96;
+  let newPosition = Math.abs(originalPosition - 27);
+  console.log(newPosition);
+  return isUpperCase(char)
+    ? String.fromCharCode(newPosition + 64)
+    : String.fromCharCode(newPosition + 96);
 };
 // console.log(swapLetterPosition("a"))
