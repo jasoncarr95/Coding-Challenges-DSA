@@ -1,6 +1,31 @@
-const stack = [];
-stack.push(2); // stack is now [2]
-stack.push(5); // stack is now [2,5]
-let i = stack.pop(); // stack is now [2]
-console.log(`i = ${i}`); // 5
-console.log(`stack = ${stack}`); // [2]
+// STACK
+class Stack {
+  constructor() {
+    this.items = [];
+    this.size = 0;
+  }
+
+  push(items) {}
+
+  pop(items) {}
+
+  peak(items) {}
+}
+
+// push
+
+// pop
+
+// peak
+
+// clear
+
+const pancakes = new Stack();
+
+pancakes.push("Blueberry");
+
+pancakes.push("Chocolate Chip");
+
+pancakes.push("Vegan");
+
+console.log(pancakes);
