@@ -19,9 +19,14 @@ function binarySearch(array, key) {
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let result = binarySearch(numbers, 12); // -1
+console.log(binarySearch(numbers, 1));
+console.log(binarySearch(numbers, 10));
+console.log(binarySearch(numbers, 4));
+// console.log(numbers.length);
+console.log(binarySearch(numbers, 5));
+console.log(binarySearch(numbers, 12));
 
-console.log(result);
-
-result = binarySearch(numbers, 5); // 4
-console.log(result);
+console.log("\n~~~~~~~~\n");
+numbers = [1, 4, 5];
+console.log(binarySearch(numbers, 4));
+console.log(binarySearch(numbers, 12));

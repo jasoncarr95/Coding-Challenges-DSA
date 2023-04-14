@@ -2,6 +2,8 @@
 
 other
 
+dsa/__tests__
+
 # Dependencies
 /node_modules
 /.pnp
