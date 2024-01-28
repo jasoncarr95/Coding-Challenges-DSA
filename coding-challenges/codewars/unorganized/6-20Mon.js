@@ -11,8 +11,8 @@ function cookie(x) {
   typeof x === "string"
     ? (cookieEater = "Zach")
     : typeof x === "number"
-    ? (cookieEater = "Monica")
-    : (cookieEater = "the dog");
+      ? (cookieEater = "Monica")
+      : (cookieEater = "the dog");
   return `Who ate the last cookie? It was ${cookieEater}!`;
 }
 
@@ -98,7 +98,7 @@ function procedure(n) {
       e
         .toString()
         .split("")
-        .reduce((a, b) => Number(a) + Number(b))
+        .reduce((a, b) => Number(a) + Number(b)),
     )
     .reduce((a, b) => a + b);
 }

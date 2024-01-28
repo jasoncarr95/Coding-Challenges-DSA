@@ -6,11 +6,11 @@
  * @returns {number[]} array generated
  */
 function range(start, stop, increment) {
-    var arr = [];
-    for (var i = start; i <= stop; i += increment || 1) {
-        arr.push(i);
-    }
-    return arr;
+  var arr = [];
+  for (var i = start; i <= stop; i += increment || 1) {
+    arr.push(i);
+  }
+  return arr;
 }
 console.log(range(0, 5)); // [0, 1, 2, 3, 4, 5]
 console.log(range(3, 9, 3)); // [3, 6, 9]

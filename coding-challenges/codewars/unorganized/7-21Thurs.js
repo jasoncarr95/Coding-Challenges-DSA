@@ -6,10 +6,10 @@ var fizzBuzz = function (n) {
     i % 5 === 0 && i % 3 === 0
       ? result.push("FizzBuzz")
       : i % 3 === 0
-      ? result.push("Fizz")
-      : i % 5 === 0
-      ? result.push("Buzz")
-      : result.push(String(i));
+        ? result.push("Fizz")
+        : i % 5 === 0
+          ? result.push("Buzz")
+          : result.push(String(i));
   }
   return result;
 };

@@ -26,8 +26,8 @@ function gordon(a) {
         return vowels.includes(char)
           ? (char = "*")
           : char === "A"
-          ? (char = "@")
-          : char;
+            ? (char = "@")
+            : char;
       })
       .join("");
   };

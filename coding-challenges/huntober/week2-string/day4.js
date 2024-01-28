@@ -16,9 +16,9 @@ const reverseString = (str) => {
 
 console.log(
   reverseString(
-    "   The white space at the beginning of this string doesn't match the whitespace at the end. "
+    "   The white space at the beginning of this string doesn't match the whitespace at the end. ",
   ),
-  "result"
+  "result",
 );
 // reverse it
 (" .dne eht ta ecapsetihw eht hctam t'nseod gnirts siht fo gninnigeb eht ta ecaps etihw ehT   ");

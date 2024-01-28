@@ -28,7 +28,7 @@ const checkCatPunSubmissions = (submissions) => {
   console.log(submissions.length);
   // no empty spaces at start/end
   submissions = submissions.filter(
-    (submission) => !submission.startsWith(" ") && !submission.endsWith(" ")
+    (submission) => !submission.startsWith(" ") && !submission.endsWith(" "),
   );
   console.log(submissions.length);
 
@@ -37,7 +37,7 @@ const checkCatPunSubmissions = (submissions) => {
     (submission) =>
       !submission.toLowerCase().includes("dog") &&
       !submission.toLowerCase().includes("bark") &&
-      !submission.toLowerCase().includes("bone")
+      !submission.toLowerCase().includes("bone"),
   );
   console.log(submissions.length);
 
@@ -61,7 +61,7 @@ const checkCatPunSubmissions = (submissions) => {
     return charToCheck.toLowerCase() !== "e";
   };
   submissions = submissions.filter((submission) =>
-    afterMiddleCharIsntE(submission)
+    afterMiddleCharIsntE(submission),
   );
   console.log(submissions.length);
 
@@ -70,12 +70,12 @@ const checkCatPunSubmissions = (submissions) => {
     let numLowerCase = str
       .split("")
       .filter(
-        (char) => char.toLowerCase() === char && char.toUpperCase() !== char
+        (char) => char.toLowerCase() === char && char.toUpperCase() !== char,
       ).length;
     return numLowerCase;
   };
   submissions = submissions.filter(
-    (submission) => getNumOfLowerCases(submission) % 2 === 0
+    (submission) => getNumOfLowerCases(submission) % 2 === 0,
   );
   console.log(submissions.length);
 
@@ -84,12 +84,12 @@ const checkCatPunSubmissions = (submissions) => {
     let numUpperCase = str
       .split("")
       .filter(
-        (char) => char.toUpperCase() === char && char.toLowerCase() !== char
+        (char) => char.toUpperCase() === char && char.toLowerCase() !== char,
       ).length;
     return numUpperCase;
   };
   submissions = submissions.filter(
-    (submission) => getNumOfUpperCases(submission) >= 2
+    (submission) => getNumOfUpperCases(submission) >= 2,
   );
   console.log(submissions.length);
 

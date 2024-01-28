@@ -30,10 +30,10 @@ function fizzBuzz(num) {
     i % 3 === 0 && i % 5 === 0
       ? console.log("Fizz Buzz")
       : i % 3 === 0
-      ? console.log("Fizz")
-      : i % 5 === 0
-      ? console.log("Buzz")
-      : console.log(i);
+        ? console.log("Fizz")
+        : i % 5 === 0
+          ? console.log("Buzz")
+          : console.log(i);
   }
 }
 

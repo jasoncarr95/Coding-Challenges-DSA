@@ -28,7 +28,7 @@ String.prototype.characterCount = function (charsToCount) {
 
   // get array of num occurences from arguments
   const count = [...charsToCount].map(
-    (charToCount) => str.filter((char) => char === charToCount).length
+    (charToCount) => str.filter((char) => char === charToCount).length,
   );
 
   // if single char, return single number, else return arr

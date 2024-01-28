@@ -53,5 +53,5 @@ const removeXthCharacter = (str, x) => {
 // console.log(y)
 
 console.log(
-  removeXthCharacter("Thies its H alltowe!en!? Th#is Tis GHalolowmeen$!", 4)
+  removeXthCharacter("Thies its H alltowe!en!? Th#is Tis GHalolowmeen$!", 4),
 );

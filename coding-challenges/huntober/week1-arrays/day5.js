@@ -33,7 +33,7 @@ console.log(
   shuffleArray([
     ["hello", "friend"],
     ["I'm", "Jason"],
-  ])
+  ]),
 );
 
 // function Shuffle(arguments) {

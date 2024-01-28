@@ -55,6 +55,6 @@ console.log(
     "16",
     "16",
     "4",
-  ])
+  ]),
 );
 // 'btswmdsbd kkw'

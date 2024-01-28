@@ -7,10 +7,10 @@ function fizzbuzz(n) {
     i % 3 == 0 && i % 5 == 0
       ? arr.push("fizzbuzz")
       : i % 3 == 0
-      ? arr.push("fizz")
-      : i % 5 == 0
-      ? arr.push("buzz")
-      : arr.push(i);
+        ? arr.push("fizz")
+        : i % 5 == 0
+          ? arr.push("buzz")
+          : arr.push(i);
   }
   return arr;
 }
@@ -21,8 +21,8 @@ function isSortedAndHow(array) {
   return array === array.sort((a, b) => a - b)
     ? "yes, ascending"
     : array === array.sort((a, b) => b - a)
-    ? "yes, descending"
-    : "no";
+      ? "yes, descending"
+      : "no";
 }
 
 function isSortedAndHow(array) {
@@ -44,8 +44,8 @@ function isSortedAndHow(array) {
   return array.toString() == ascending.toString()
     ? "yes, ascending"
     : array.toString() == descending.toString()
-    ? "yes, descending"
-    : "no";
+      ? "yes, descending"
+      : "no";
 }
 
 console.log(isSortedAndHow([1, 2])); //'yes, ascending'

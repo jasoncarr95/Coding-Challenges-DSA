@@ -32,8 +32,8 @@ function checkExam(array1, array2) {
       array2[i] == array1[i]
         ? (score += 4)
         : array2[i] == undefined
-        ? (score += 0)
-        : (score -= 1);
+          ? (score += 0)
+          : (score -= 1);
     }
   }
   return score > 0 ? score : 0;

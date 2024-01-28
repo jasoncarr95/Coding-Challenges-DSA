@@ -30,7 +30,7 @@ const Winner = (props) => {
     null,
     "You won! It took you ",
     props.moves,
-    " moves!"
+    " moves!",
   );
 };
 
@@ -53,10 +53,10 @@ const GameBoard = (props) => {
             src: val,
             alt: `Tile ${valInd + 1}`,
             id: val,
-          })
+          }),
         );
       });
-    })
+    }),
   );
 };
 
@@ -259,7 +259,7 @@ const Game = () => {
     React.createElement(
       "button",
       { onClick: () => shuffleGrid() },
-      "Shuffle"
+      "Shuffle",
     ) /*#__PURE__*/,
     React.createElement("button", { onClick: () => resetGame() }, "New Game"),
     isWin /*#__PURE__*/
@@ -267,13 +267,13 @@ const Game = () => {
       : React.createElement(GameBoard, {
           onMove: (arrInd, valInd) => handleMove(arrInd, valInd),
           grid: grid,
-        })
+        }),
   );
 };
 
 ReactDOM.render(
   /*#__PURE__*/ React.createElement(Game, null),
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 
 //

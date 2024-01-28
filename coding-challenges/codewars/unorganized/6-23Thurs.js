@@ -17,8 +17,8 @@ function sumOrProduct(array, n) {
   return sumLargest === prodSmallest
     ? "same"
     : sumLargest > prodSmallest
-    ? "sum"
-    : "product";
+      ? "sum"
+      : "product";
 }
 
 //  What's your running pace   KYU 6

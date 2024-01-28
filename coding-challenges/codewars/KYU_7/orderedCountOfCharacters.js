@@ -30,6 +30,6 @@ const orderedCount = (text) => {
 
 console.log(
   orderedCount("abracadabra"),
-  "=> [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]"
+  "=> [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]",
 );
 console.log(orderedCount("233312"), "=> [['2', 2], ['3', 3], ['1', 1 ]]");

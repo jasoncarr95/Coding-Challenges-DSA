@@ -25,7 +25,7 @@ function encode(string) {
   return string
     .split("")
     .map((char) =>
-      Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char
+      Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char,
     )
     .join("");
 }
@@ -41,7 +41,7 @@ function decode(string) {
   return string
     .split("")
     .map((char) =>
-      Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char
+      Object.keys(swapMap).includes(char) ? (char = swapMap[char]) : char,
     )
     .join("");
 }

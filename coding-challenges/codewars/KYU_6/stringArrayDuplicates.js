@@ -20,7 +20,7 @@ function dup(str) {
     word
       .split("")
       .filter((letter, index, arr) => letter !== arr[index - 1])
-      .join("")
+      .join(""),
   );
 }
 // function dup(str) {
@@ -35,7 +35,7 @@ function dup(str) {
 // }
 console.log(
   dup(["abracadabra", "allottee", "assessee"]),
-  ` => ["abracadabra","alote","asese"]`
+  ` => ["abracadabra","alote","asese"]`,
 );
 console.log(dup(["kelless", "keenness"]), ` => ["keles","kenes"]`);
 console.log(dup(["hello", "world"]), ` => ["helo", "world"]`);

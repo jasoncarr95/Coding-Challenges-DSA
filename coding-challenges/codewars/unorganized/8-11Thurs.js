@@ -46,7 +46,7 @@ console.log(
     ["u", "i", "i", "a"],
     ["s", "v", "f", "n"],
     ["t", "e", "e", ""],
-  ])
+  ]),
 ); // => "Just Live Life Man"
 
 //  PseudoCode:

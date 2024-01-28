@@ -16,10 +16,10 @@ COMPLETED: Thu. 10.20.22
 function comp1(a, b) {
   const c = new Date();
   const da = Math.ceil(
-    Math.abs(c.getTime() - a.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(c.getTime() - a.getTime()) / (1000 * 60 * 60 * 24),
   );
   const db = Math.ceil(
-    Math.abs(c.getTime() - b.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(c.getTime() - b.getTime()) / (1000 * 60 * 60 * 24),
   );
   const as = a.toDateString();
   const bs = b.toDateString();
@@ -37,10 +37,10 @@ function comp1(a, b) {
 function comp2(a, b) {
   const c = new Date();
   const da = Math.ceil(
-    Math.abs(c.getTime() - a.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(c.getTime() - a.getTime()) / (1000 * 60 * 60 * 24),
   );
   const db = Math.ceil(
-    Math.abs(c.getTime() - b.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(c.getTime() - b.getTime()) / (1000 * 60 * 60 * 24),
   );
   const as = a.toDateString();
   const bs = b.toDateString();
@@ -58,10 +58,10 @@ function comp2(a, b) {
 function tot(a, b) {
   const c = new Date();
   const da = Math.ceil(
-    Math.abs(c.getTime() - a.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(c.getTime() - a.getTime()) / (1000 * 60 * 60 * 24),
   );
   const db = Math.ceil(
-    Math.abs(c.getTime() - b.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(c.getTime() - b.getTime()) / (1000 * 60 * 60 * 24),
   );
   const as = a.toDateString();
   const bs = b.toDateString();

@@ -26,8 +26,8 @@ const removeConsecutiveDuplicates = (str) => {
 
 console.log(
   removeConsecutiveDuplicates(
-    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
-  )
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta",
+  ),
   // --> "alpha beta gamma delta alpha beta gamma delta"
 );
 console.log(removeConsecutiveDuplicates("Hello world")); // "Hello World"

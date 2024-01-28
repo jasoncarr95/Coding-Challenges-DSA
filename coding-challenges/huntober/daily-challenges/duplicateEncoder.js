@@ -54,5 +54,5 @@ console.log(duplicateEncode("Success"), "\n)())())");
 console.log(duplicateEncode("Supralapsarian"));
 
 duplicateEncode(
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iste corrupti aperiam omnis perferendis eum quidem quo necessitatibus natus! Eveniet reiciendis est reprehenderit quo ullam praesentium amet aperiam veniam illo!"
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iste corrupti aperiam omnis perferendis eum quidem quo necessitatibus natus! Eveniet reiciendis est reprehenderit quo ullam praesentium amet aperiam veniam illo!",
 );

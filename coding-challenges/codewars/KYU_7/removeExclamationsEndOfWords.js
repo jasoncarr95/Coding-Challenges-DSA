@@ -10,7 +10,7 @@ function remove(str) {
   const words = str
     .split(" ")
     .map((word) =>
-      word.endsWith("!") ? word.slice(0, word.indexOf("!")) : word
+      word.endsWith("!") ? word.slice(0, word.indexOf("!")) : word,
     );
   return words;
 }

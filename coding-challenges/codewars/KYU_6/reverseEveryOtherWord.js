@@ -9,9 +9,9 @@ function reverse(str) {
 }
 console.log(
   reverse("Reverse this string, please!"),
-  "\n=>Reverse siht string, !esaelp"
+  "\n=>Reverse siht string, !esaelp",
 );
 console.log(
   reverse("I really don't like reversing strings!"),
-  "\n=>I yllaer don't ekil reversing !sgnirts"
+  "\n=>I yllaer don't ekil reversing !sgnirts",
 );

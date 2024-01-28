@@ -30,7 +30,7 @@ const getPerformanceTimes = (n) => {
   const privateMemoizedResult = fibPrivateCache(n);
   const endPrivateMemo = performance.now();
   const privateMemoizedTime = Number(
-    (endPrivateMemo - startPrivateMemo).toFixed(3)
+    (endPrivateMemo - startPrivateMemo).toFixed(3),
   );
 
   const startBottomUp = performance.now();

@@ -30,9 +30,9 @@ function fizzBuzz(n) {
 
 console.log(
   fizzBuzz(10),
-  `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz"`
+  `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz"`,
 );
 console.log(
   fizzBuzz(15),
-  `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz", 11, "Fizz Buzz", 13, "Fizz", "Fizz Buzz"`
+  `\n=> 1, "Fizz", "Buzz", "Fizz", 5, "Fizz Buzz", 7, "Fizz", "Buzz", "Fizz", 11, "Fizz Buzz", 13, "Fizz", "Fizz Buzz"`,
 );

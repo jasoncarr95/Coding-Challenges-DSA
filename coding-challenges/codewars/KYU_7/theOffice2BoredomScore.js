@@ -31,8 +31,8 @@ function boredom(staff) {
   return totalScore <= 80
     ? "kill me now"
     : totalScore < 100
-    ? "i can handle this"
-    : "party time!!";
+      ? "i can handle this"
+      : "party time!!";
 }
 
 module.exports = boredom;

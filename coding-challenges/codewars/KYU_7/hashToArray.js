@@ -5,5 +5,5 @@ function convertHashToArray(hash) {
 }
 
 console.log(
-  convertHashToArray({ name: "Jeremy", age: 24, role: "Software Engineer" })
+  convertHashToArray({ name: "Jeremy", age: 24, role: "Software Engineer" }),
 ); // [["age", 24], ["name", "Jeremy"], ["role", "Software Engineer"]]

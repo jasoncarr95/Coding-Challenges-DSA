@@ -34,7 +34,7 @@ function stringTransformer(str) {
     .join(" ")
     .split("")
     .map((char) =>
-      char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()
+      char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase(),
     )
     .join("");
 }

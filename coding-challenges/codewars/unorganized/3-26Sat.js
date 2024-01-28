@@ -71,7 +71,7 @@ console.log(
     "3",
     true,
     false,
-  ])
+  ]),
 );
 console.log(
   findNeedle([
@@ -82,5 +82,5 @@ console.log(
     "a piece of hay",
     "needle",
     "something somebody lost a while ago",
-  ])
+  ]),
 );

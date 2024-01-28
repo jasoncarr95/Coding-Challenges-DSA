@@ -3,10 +3,10 @@ function defineSuit(card) {
   return card.includes("♣")
     ? "clubs"
     : card.includes("♠")
-    ? "spades"
-    : card.includes("♥")
-    ? "hearts"
-    : "diamonds";
+      ? "spades"
+      : card.includes("♥")
+        ? "hearts"
+        : "diamonds";
 }
 
 // isograms     KYU 7

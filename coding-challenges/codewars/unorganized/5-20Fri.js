@@ -64,7 +64,7 @@ function center(strng, width, fill = " ") {
   else {
     let diff = width - strng.length;
     return `${fill.repeat(Math.ceil(diff / 2))}${strng}${fill.repeat(
-      Math.floor(diff / 2)
+      Math.floor(diff / 2),
     )}`;
   }
 }

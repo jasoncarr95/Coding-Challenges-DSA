@@ -58,6 +58,6 @@ console.log(repairString("O"));
 console.log(repairString("PR0-T1P #hqB: 1T'5 N1C3 T0 5AY H3770.")); // "PRO-TIP #498: IT'S NICE TO SAY HELLO.";
 console.log(
   repairString(
-    "e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs"
-  )
+    "e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs",
+  ),
 );

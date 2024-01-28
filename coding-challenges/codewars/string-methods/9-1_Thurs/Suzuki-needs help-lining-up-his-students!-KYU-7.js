@@ -9,8 +9,8 @@
     */
 console.log(
   lineupStudents(
-    "Tadashi Takahiro Takao Takashi Takayuki Takehiko Takeo Takeshi Takeshi"
-  )
+    "Tadashi Takahiro Takao Takashi Takayuki Takehiko Takeo Takeshi Takeshi",
+  ),
 );
 // ['Takehiko','Takayuki','Takahiro','Takeshi', 'Takeshi','Takashi','Tadashi','Takeo','Takao']
 

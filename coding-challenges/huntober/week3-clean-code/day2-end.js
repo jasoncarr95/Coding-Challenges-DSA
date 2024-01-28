@@ -1,7 +1,7 @@
 function calculateDaysUntilDate(date) {
   const currentDate = new Date();
   const days = Math.ceil(
-    Math.abs(currentDate.getTime() - date.getTime()) / (1000 * 60 * 60 * 24)
+    Math.abs(currentDate.getTime() - date.getTime()) / (1000 * 60 * 60 * 24),
   );
   return days;
 }
